@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+  }
+  
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient() */
+
+  body {
+    background-image: linear-gradient(33deg, #333, #333 50%, #eee 50%, #333 75%);
+  }
+
+  #container {
+    margin: 0 auto;
+    text-align: center;
+  } 
+ 
+  #wrapper {
+      height: 600px;
+      width: 900px;
+      margin: 0 auto;
+      background-image: linear-gradient(to left, rgb(31, 28, 179), #333 50%, #eee 75%, #333 75%);
+      border: lightsalmon 2px solid;
+  }
+#rock {
+    padding: 20px;
+    background-image: linear-gradient(to left, #333, #eee 50%);
+    border-radius: 10px;
+}
+
+  #game-area {
+      height: 20px;
+      width: 100%;
+      background-image: linear-gradient(270deg, #00D7B9, #B95DD7 50%, #FFB367 100%);
+      background-repeat: no-repeat;
+      background-origin: padding-box, border-box;
+      text-align: center;
+  }
+
+  footer {
+      height: 60px;
+  }
