@@ -29,6 +29,7 @@
     border-radius: 10px;
 }
 
+/***
   #game-area {
       height: 20px;
       width: 100%;
@@ -37,7 +38,57 @@
       background-origin: padding-box, border-box;
       text-align: center;
   }
+ 
+
+  #game-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    width: 180px;
+    border-top: 180px solid rgb(128, 0, 107);
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent; 
+  }
+  
+  #game-area:after{
+    position: absolute;
+    content: '';
+    border-bottom: 180px solid rgb(0, 66, 128);
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    bottom: 180px;
+    left: -90px;
+  }
+ ****/
+ 
+ /* https://css-tricks.com/the-shapes-of-css/ */
+
+  #pentagon {
+    position: relative;
+    margin-top: 180px;
+    margin-left: 150px;
+    width: 450px;
+    box-sizing: content-box;
+    border-width: 240px 75px 0;
+    border-style: solid;
+    border-color: rgb(250, 247, 247) transparent;
+  }
+  #pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 240px;
+    left: -75px;
+    border-width: 0 300px 150px;
+    border-style: solid;
+    border-color: transparent transparent rgb(252, 249, 249);
+  }
 
   footer {
-      height: 60px;
+      height: 20%;
+      margin-bottom: 0;
+      background: linear-gradient(0deg,#4383c3 20%,#30b4cb 90%);
   }
