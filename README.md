@@ -109,3 +109,6 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+### Credit
+- Code for grid was adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_grid

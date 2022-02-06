@@ -15,22 +15,20 @@
         <h1> Rock Paper Scissor Lizard Spock </h1>
     </header>
         <div id="container">
-            <div id="score-area">
-                <h1 class="score">
-                    <span>
-                        SCORE 
-                        <br>
-                        <span>You
-                            <span id="userScore">0</span> :
-                            <span id="compScore">0</span> Computer
-                        </span>
-                    </span>
-                </h1>
-            </div>
-            <div id="feedback-area">
-                <span id="feedback"> You played <span id="user-choice"></span> and computer played <span id="computer-choice"></span></span>
-                <h2 id="winner"></h2>
-            </div>
+            <div class="grid-area">
+                <div class="grid-cell">Player</div>
+                <div class="grid-cell">YOU</div>
+                <div class="grid-cell">Computer</div>  
+                <div class="grid-cell">Strategy</div>
+                <div id="user-choice" class="grid-cell"></div>
+                <div id="computer-choice" class="grid-cell"></div>  
+                <div class="grid-cell">Score</div>
+                <div id="userScore" class="grid-cell"></div>
+                <div id="compScore" class="grid-cell"></div>  
+                <div class="grid-cell">Winner</div> 
+                <div id="userWin" class="grid-cell"></div> 
+                <div id="compWin" class="grid-cell"></div> 
+              </div>
             <div id="game-area">
                 <div id="rock" class="choice">
                     <i class="fas fa-hand-rock"></i>
