@@ -36,9 +36,14 @@
     padding: 10px;
   }
   #game-area {
+    margin-top: 45px;
     border: #cbaf30 1px solid;
     background-color: #3a3a3a;
     box-shadow: 10px 2px 4px 5px;
+  }
+  #feedback {
+    background-color: #4383c3;
+    color: #fff;
   }
 .choice {
   position: relative;
