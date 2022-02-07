@@ -16,32 +16,43 @@
     padding: 20px;
     background-image: linear-gradient(to right, #333, #eee 50%, #333);
     border-radius: 10px;
+    border-bottom: 2px #fff solid;
+  }
+  header a {
+    text-decoration: none;
+    color: inherit;
   }
   #container {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    border: red 1px solid;
     position: relative;
-    top: 10px;
+    top: 5px;
   }
-  .grid-area {
-    display: grid;
-    width: 75%;
-    border: rgb(212, 47, 47) 2px solid;
-    background-image: linear-gradient(to right, rgb(93, 208, 216), rgb(27, 216, 185));
+  .wrapper {
+    background-image: linear-gradient(to right, #333, #eee, #eee, #333);
     margin: 0 auto;
-    grid-template-columns: auto auto auto;
+    height: 140px;
+    border-top: 2px #fff solid;
+    border-radius: -10px;
+    text-align: center;
+  }
+  #grid-area {
+    display: none;
+    background-image: linear-gradient(to right, #333, #eee, #eee, #333);
+    margin: 0 auto;
+    grid-template-columns: 20% 20% 20%;
     padding: 2px;
+    padding-left: 410px;
+    border-top: 2px #fff solid;
+    border-radius: 10px;
   }
   .grid-cell {
     padding: 5px;
     font-size: 20px;
-    text-align: center;
   } 
-  
   .game-grid {
-    border: #30b4cb 2px solid;
+    border: #30b4cb 5px solid;
     display: grid;
     row-gap: 30px;
     margin: 0 auto;
@@ -52,11 +63,9 @@
   }
   .game-cell {
     background-image: linear-gradient(to right, #333, #eee 50%, #333);
-    border: 5px solid rgb(189, 15, 15);
     border-radius: 75px;
     padding: 5px;
   }
- 
 .choice {
   position: relative;
   margin: 0 auto;
@@ -77,9 +86,22 @@
 #lizard i {
   padding-left: 15px;
 }
-
   footer {
       height: 20%;
       margin-bottom: 0;
-      background: linear-gradient(0deg,#4383c3 20%,#30b4cb 90%);
+      background-image: linear-gradient(0deg, #4383c3 20%,#30b4cb 90%);
   }
+
+  /* Rules page */
+#rules {
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #3a3a3a, #30b4cb, #3a3a3a);
+  color: #fff;
+  padding-left: 33%;
+}
+#rules h2 {
+  padding: 30px;
+}
+#rules h3 {
+  padding-bottom: 10px;
+}

@@ -11,6 +11,26 @@ const winList = ['paperrock', 'rockscissors', 'scissorspaper', 'lizardpaper', 's
 let cscore = 0;
 let uscore = 0;
 
+document.addEventListener('DOMContentLoaded', updateName);
+
+document.addEventListener('DOMContentLoaded', showCell);
+
+document.addEventListener('DOMContentLoaded', newStyle);
+
+function showCell(){
+    document.getElementById('grid-area').style.display = 'grid';
+    }
+
+function newStyle(){
+    let ppp = document.getElementById('player-name');
+    ppp.style.color = 'red';
+}
+
+function updateName(){
+    let playerName = document.getElementById('player-name');
+    playerName.innerHTML = window.prompt('Enter your name', 'Player');
+}
+
 function computerPicks() {
     let randIndex = Math.floor(Math.random()*5);
     return strategy[randIndex].id
@@ -32,13 +52,11 @@ function determineWinner(){
         computerScore.innerHTML = cscore;
         yourChoice.innerHTML = user;
         comChoice.innerHTML = computer;
-        winner.innerHTML = 'You Won!';
     } else if (user === computer){
         userScore.innerHTML = uscore;
         computerScore.innerHTML = cscore;
         yourChoice.innerHTML = user;
         comChoice.innerHTML = computer;
-        winner.innerHTML = 'It is draw';
     }
     else {
         cscore +=1;
@@ -46,7 +64,6 @@ function determineWinner(){
         computerScore.innerHTML = cscore;
         yourChoice.innerHTML = user;
         comChoice.innerHTML = computer;
-        winner.innerHTML = 'You lost';
     }
 }
 
