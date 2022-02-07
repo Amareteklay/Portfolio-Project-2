@@ -27,7 +27,7 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-    top: 5px;
+    top: 3px;
   }
   .wrapper {
     background-image: linear-gradient(to right, #333, #eee, #eee, #333);
@@ -69,7 +69,6 @@
     padding: 2px;
     padding-left: 410px;
     border-top: 2px #fff solid;
-    border-radius: 10px;
   }
   .grid-cell {
     padding: 5px;
