@@ -12,29 +12,78 @@
 
 <body>
     <header>
-        <h1> Rock Paper Scissor Lizard Spock </h1>
+        <h1> Rock Paper Scissors Lizard Spock </h1>
     </header>
-        <div id="container">
-            <div class="wrapper">
-                <h1 id="welcome">Welcome!</h1> <br>
-                <h2><span class="welcome-btn"> <a href="game.html">Play</a></span> <span class="welcome-btn"><a href="rules.html">Rules</a></span></h2>
+    <!-- Container for the game area -->
+    <div id="container">
+
+        <!-- welcome and input name -->
+        <div id="welcome">
+            <div>
+            <h1>Welcome!</h1> <br>
+            <label for="user-name">Please Enter Your Name</label> <br>
+            <input id="user-name" type="text">
+        </div>
+            <div id="game-btn">
             </div>
-            <div id="game-area">
-                <div class="game-grid">
-                    <div id="paper" class="choice game-cell"><i class="fas fa-hand-paper"></i></div>
-                    <div id="rock" class="choice game-cell"><i class="fas fa-hand-rock"></i></div>
-                    <div id="scissors" class="choice game-cell"> <i class="fas fa-hand-scissors"></i></div>  
-                    <div id="lizard" class="choice game-cell"><i class="fas fa-hand-lizard"></i></div>
-                    <div id="empty"></div>  
-                    <div id="spock" class="choice game-cell"><i class="fas fa-hand-spock"></i></div>
-                  </div>
+            <button id="start-game">Play</button>
+            <button id="show-rules">Rules</button>
+        </div>
+
+        <!-- Start the game -->
+        <div id="play">
+            <div class="game-grid">
+                <div id="paper" class="choice game-cell"><i class="fas fa-hand-paper"></i></div>
+                <div id="rock" class="choice game-cell"><i class="fas fa-hand-rock"></i></div>
+                <div id="scissors" class="choice game-cell"> <i class="fas fa-hand-scissors"></i></div>
+                <div id="lizard" class="choice game-cell"><i class="fas fa-hand-lizard"></i></div>
+                <div id="empty"></div>
+                <div id="spock" class="choice game-cell"><i class="fas fa-hand-spock"></i></div>
             </div>
         </div>
-<footer>
-    
-</footer>
-<script src="https://kit.fontawesome.com/1334675705.js" crossorigin="anonymous"></script>
-<!-- <script src="assets/js/script.js"></script> -->
+
+        <!-- Display results -->
+        <div id="result">
+            <div id="grid-area">
+                <div id="player" class="grid-cell">Player</div>
+                <div id="player-name" class="grid-cell">YOU</div>
+                <div class="grid-cell">Computer</div>
+                <div class="grid-cell">Strategy</div>
+                <div id="user-choice" class="grid-cell"></div>
+                <div id="computer-choice" class="grid-cell"></div>
+                <div class="grid-cell">Score</div>
+                <div id="userScore" class="grid-cell"></div>
+                <div id="compScore" class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div id="userWin" class="grid-cell"></div>
+                <div id="compWin" class="grid-cell"></div>
+            </div>
+        </div>
+
+        <!-- Show rules -->
+        <div id="rules">
+            <p>Hello <span id="user"></span>!</p>
+            <p>Here are the rules</p>
+            <h2>Fun Facts</h2>
+            <h3>Paper beats Rock</h3>
+            <h3>Rock beats Scissors</h3>
+            <h3>Scissors beat Paper</h3>
+            <h3>Lizard beats Paper</h3>
+            <h3>Spock beats Rock</h3>
+            <h3>Rock beats Lizard</h3>
+            <h3>Lizard beats Spock</h3>
+            <h3> Scissors beat Lizard</h3>
+            <h3> Paper beats Spock</h3>
+            <h3>Spock beats Scissors</h3>
+            <h2><span class="welcome-btn"><a href="game.html">Play Now</a></span></h2>
+        </div>
+        <button class="">Play</button>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/1334675705.js" crossorigin="anonymous"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
 </body>
 
 </html>

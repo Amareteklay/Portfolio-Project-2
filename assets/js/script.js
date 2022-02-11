@@ -28,7 +28,8 @@ function newStyle(){
 
 function updateName(){
     let playerName = document.getElementById('player-name');
-    playerName.innerHTML = window.prompt('Enter your name', 'Player');
+    playerName.innerHTML = 'PLAYER';
+    //playerName.innerHTML = window.prompt('Enter your name', 'Player');
 }
 
 function computerPicks() {
@@ -68,3 +69,4 @@ function determineWinner(){
 }
 
 play();
+

@@ -22,67 +22,82 @@
     text-decoration: none;
     color: inherit;
   }
+
   #container {
     margin: 0 auto;
-    width: 100%;
-    margin: 0 auto;
+    border: #4383c3 1px solid;
+    width: 600px;
+    height: 450px;
     position: relative;
     top: 3px;
   }
-  .wrapper {
+
+  #welcome {
     background-image: linear-gradient(to right, #333, #eee, #eee, #333);
     margin: 0 auto;
-    height: 140px;
-    border-top: 2px #fff solid;
+    height: 100%;
+    width: 100%;
+    border: 2px rgb(230, 23, 23) solid;
     border-radius: -10px;
     text-align: center;
   }
-  #welcome {
-    padding: 10px;
-  }
-  .welcome-btn {
+#user-name {
+  border: #30b4cb 1px solid;
+}
+  #start-game,
+  #show-rules {
     padding: 10px 30px;
     border: #30b4cb 2px solid;
     border-radius: 10px;
   }
-  #rules h2.welcome-btn {
-    padding: 10px 30px;
-    border: lightsalmon 2px solid;
-    border-radius: 5px;
-  }
-  #rules h2.welcome-btn:hover {
-    color: #eee;
-  }
+
   .welcome-btn a {
     color: inherit;
     text-decoration: none;
   }
-  .welcome-btn:hover {
+
+  #start-game:hover,
+  #show-rules:hover {
     border: lightsalmon 2px solid;
     color: #30b4cb;
   }
-  #grid-area {
+ 
+  #game-btn {
+    margin-top: 300px;
+  }
+  #play {
     display: none;
+    height: 100%;
+    width: 100%;
     background-image: linear-gradient(to right, #333, #eee, #eee, #333);
     margin: 0 auto;
     grid-template-columns: 20% 20% 20%;
-    padding: 2px;
-    padding-left: 410px;
-    border-top: 2px #fff solid;
   }
-  .grid-cell {
-    padding: 5px;
-    font-size: 20px;
-  } 
   .game-grid {
     border: #30b4cb 5px solid;
     display: grid;
     row-gap: 30px;
     margin: 0 auto;
-    width: 75%;
+    width: 100%;
+    height: 100%;
     grid-template-columns: auto auto auto;
     border-radius: 10px;
     padding: 2px;
+  }
+  .grid-cell {
+    padding: 5px;
+    font-size: 20px;
+  } 
+
+  #result {
+    display: none;
+    background-image: linear-gradient(to right, #333, #eee, #eee, #333);
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border: 2px rgb(230, 23, 23) solid;
+    border-radius: -10px;
+    text-align: center;
   }
   .game-cell {
     background-image: linear-gradient(to right, #333, #eee 50%, #333);
@@ -117,14 +132,26 @@
 
   /* Rules page */
 #rules {
+  display: none;
   margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  border: 2px rgb(230, 23, 23) solid;
+  border-radius: -10px;
   background-image: linear-gradient(to right, #3a3a3a, #30b4cb, #3a3a3a);
   color: #fff;
-  padding-left: 33%;
 }
 #rules h2 {
   padding: 30px;
 }
 #rules h3 {
   padding-bottom: 10px;
+}
+#rules h2.welcome-btn {
+  padding: 10px 30px;
+  border: lightsalmon 2px solid;
+  border-radius: 5px;
+}
+#rules h2.welcome-btn:hover {
+  color: #eee;
 }
