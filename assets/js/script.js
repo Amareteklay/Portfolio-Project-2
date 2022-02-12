@@ -85,6 +85,3 @@ function determineWinner(item){
     }
 }
 
-function showFeedback(){
-    return
-}
