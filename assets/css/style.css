@@ -44,8 +44,9 @@
 #user-name {
   border: #30b4cb 1px solid;
 }
-  #start-game,
-  #show-rules {
+  #play-btn,
+  #rules-btn,
+  #now-play {
     padding: 10px 30px;
     border: #30b4cb 2px solid;
     border-radius: 10px;
@@ -56,8 +57,9 @@
     text-decoration: none;
   }
 
-  #start-game:hover,
-  #show-rules:hover {
+  #play-btn:hover,
+  #rules-btn:hover,
+  #now-play:hover {
     border: lightsalmon 2px solid;
     color: #30b4cb;
   }

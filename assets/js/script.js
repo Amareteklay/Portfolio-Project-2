@@ -1,3 +1,41 @@
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('user-name').focus();
+});
+
+let play = document.getElementById('play-btn');
+play.addEventListener('click', showGame);
+
+let playNow = document.getElementById('now-play');
+playNow.addEventListener('click', showGame);
+
+
+function showGame(){
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('rules').style.display = 'none';
+    document.getElementById('play').style.display = 'block';
+}
+
+let rules = document.getElementById('rules-btn');
+rules.addEventListener('click', showRules);
+
+function showRules(){
+    updateName();
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('rules').style.display = 'block';
+}
+
+function updateName(){
+    let userName = document.getElementById('user-name');
+    let user = document.getElementById('user');
+    user.innerHTML =userName.value;
+}
+
+
+
+
+
+
+/**
 const computerScore = document.getElementById('compScore')
 const userScore = document.getElementById('userScore')
 
@@ -70,3 +108,23 @@ function determineWinner(){
 
 play();
 
+
+
+// const playBtn = document.getElementById('play-btn');
+// playBtn.addEventListener('click', startGame);
+
+document.addEventListener('DOMContentLoaded', startGame);
+
+function startGame(){
+    let welcome = document.getElementById('welcome');
+    if(welcome.style.display === 'none'){
+        welcome.style.display = 'block';
+    } else {
+        let play = document.getElementById('play');
+        play.style.display = 'block';
+    }
+}
+
+// startGame();
+
+**/
