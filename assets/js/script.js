@@ -27,11 +27,20 @@ function showRules(){
 function updateName(){
     let userName = document.getElementById('user-name');
     let user = document.getElementById('user');
-    user.innerHTML =userName.value;
+    user.innerHTML = userName.value;
+    document.getElementById('player').innerHTML = userName.value;
 }
 
+let items = document.getElementsByClassName('choice');
+for (let i=0; i<items.length; i++) {
+        items[i].addEventListener('click', showResult);
+    }
 
-
+function showResult(){
+    updateName();
+    document.getElementById('play').style.display = 'none';
+    document.getElementById('result').style.display = 'block';
+}
 
 
 
