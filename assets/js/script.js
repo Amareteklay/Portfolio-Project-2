@@ -8,10 +8,13 @@ play.addEventListener('click', showGame);
 let playNow = document.getElementById('now-play');
 playNow.addEventListener('click', showGame);
 
+document.getElementById('play-again').addEventListener('click', showGame);
+
 
 function showGame(){
     document.getElementById('welcome').style.display = 'none';
     document.getElementById('rules').style.display = 'none';
+    document.getElementById('result').style.display = 'none';
     document.getElementById('play').style.display = 'block';
 }
 
@@ -33,107 +36,55 @@ function updateName(){
 
 let items = document.getElementsByClassName('choice');
 for (let i=0; i<items.length; i++) {
-        items[i].addEventListener('click', showResult);
-    }
+        items[i].addEventListener('click', playGame)
+} 
 
 function showResult(){
-    updateName();
     document.getElementById('play').style.display = 'none';
     document.getElementById('result').style.display = 'block';
+    updateName();
 }
 
-
-
-/**
-const computerScore = document.getElementById('compScore')
-const userScore = document.getElementById('userScore')
-
-const yourChoice = document.getElementById('user-choice')
-const comChoice = document.getElementById('computer-choice')
-const winner = document.getElementById('winner')
-
-const strategy = document.getElementsByClassName('choice')
-const winList = ['paperrock', 'rockscissors', 'scissorspaper', 'lizardpaper', 'spockrock', 'rocklizard', 'lizardspock', 'scissorslizard', 'paperspock', 'spockscissors'];
-
-let cscore = 0;
-let uscore = 0;
-
-document.addEventListener('DOMContentLoaded', updateName);
-
-document.addEventListener('DOMContentLoaded', showCell);
-
-document.addEventListener('DOMContentLoaded', newStyle);
-
-function showCell(){
-    document.getElementById('grid-area').style.display = 'grid';
-    }
-
-function newStyle(){
-    let ppp = document.getElementById('player-name');
-    ppp.style.color = 'red';
+function playGame(){
+    showResult();
+    let item = this.id;
+    displayStrategy(item);
+    determineWinner(item);
 }
 
-function updateName(){
-    let playerName = document.getElementById('player-name');
-    playerName.innerHTML = 'PLAYER';
-    //playerName.innerHTML = window.prompt('Enter your name', 'Player');
+function displayStrategy(x){
+    let userChoice = document.getElementById('user-choice');
+    userChoice.innerHTML = document.getElementById(x).innerHTML;
+    userChoice.classList.add('choice');
+
+    let computerChoice = document.getElementById('computer-choice');
+    computerChoice.innerHTML = comItem.innerHTML;
+    computerChoice.classList.add('choice');
 }
 
 function computerPicks() {
     let randIndex = Math.floor(Math.random()*5);
-    return strategy[randIndex].id
+    return items[randIndex];
 }
+const comItem = computerPicks();
 
-function play(){
-    for (let i=0; i<strategy.length; i++) {
-        strategy[i].addEventListener('click', determineWinner);
-    }
-}
+const winList = ['paperrock', 'rockscissors', 'scissorspaper', 'lizardpaper', 'spockrock', 'rocklizard', 'lizardspock', 'scissorslizard', 'paperspock', 'spockscissors'];
 
-function determineWinner(){
-    let computer = computerPicks();
-    let user = this.id;
+function determineWinner(item){
+    let computer = comItem.id;
+    let user = item;
     let userComputer = user + computer;
+    let result = document.getElementById('userScore');
     if (winList.includes(userComputer)){
-        uscore +=1;
-        userScore.innerHTML = uscore;
-        computerScore.innerHTML = cscore;
-        yourChoice.innerHTML = user;
-        comChoice.innerHTML = computer;
-    } else if (user === computer){
-        userScore.innerHTML = uscore;
-        computerScore.innerHTML = cscore;
-        yourChoice.innerHTML = user;
-        comChoice.innerHTML = computer;
+    result.innerHTML = user + ' beats ' + computer + '. You Won!';
+    } else if (user == computer){
+    result.innerHTML = 'It is a tie!';
     }
     else {
-        cscore +=1;
-        userScore.innerHTML = uscore;
-        computerScore.innerHTML = cscore;
-        yourChoice.innerHTML = user;
-        comChoice.innerHTML = computer;
+        result.innerHTML = computer + ' beats ' + user + '. You lost!';
     }
 }
 
-play();
-
-
-
-// const playBtn = document.getElementById('play-btn');
-// playBtn.addEventListener('click', startGame);
-
-document.addEventListener('DOMContentLoaded', startGame);
-
-function startGame(){
-    let welcome = document.getElementById('welcome');
-    if(welcome.style.display === 'none'){
-        welcome.style.display = 'block';
-    } else {
-        let play = document.getElementById('play');
-        play.style.display = 'block';
-    }
+function showFeedback(){
+    return
 }
-
-// startGame();
-
-**/
