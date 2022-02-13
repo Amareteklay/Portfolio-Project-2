@@ -10,7 +10,6 @@ playNow.addEventListener('click', showGame);
 
 document.getElementById('play-again').addEventListener('click', showGame);
 
-
 function showGame(){
     document.getElementById('welcome').style.display = 'none';
     document.getElementById('rules').style.display = 'none';
@@ -48,13 +47,14 @@ function showResult(){
 function playGame(){
     showResult();
     let item = this.id;
-    displayStrategy(item);
-    determineWinner(item);
+    let comItem = computerPicks();
+    displayStrategy(item, comItem);
+    determineWinner(item, comItem);
 }
 
-function displayStrategy(x){
+function displayStrategy(item, comItem){
     let userChoice = document.getElementById('user-choice');
-    userChoice.innerHTML = document.getElementById(x).innerHTML;
+    userChoice.innerHTML = document.getElementById(item).innerHTML;
     userChoice.classList.add('choice');
 
     let computerChoice = document.getElementById('computer-choice');
@@ -66,11 +66,10 @@ function computerPicks() {
     let randIndex = Math.floor(Math.random()*5);
     return items[randIndex];
 }
-const comItem = computerPicks();
 
 const winList = ['paperrock', 'rockscissors', 'scissorspaper', 'lizardpaper', 'spockrock', 'rocklizard', 'lizardspock', 'scissorslizard', 'paperspock', 'spockscissors'];
 
-function determineWinner(item){
+function determineWinner(item, comItem){
     let computer = comItem.id;
     let user = item;
     let userComputer = user + computer;
