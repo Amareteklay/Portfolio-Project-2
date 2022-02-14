@@ -12,22 +12,23 @@
 
 <body>
     <header>
+    <a href="index.html">
         <h1> Rock Paper Scissors Lizard Spock </h1>
+    </a>
     </header>
     <!-- Container for the game area -->
     <div id="container">
 
         <!-- welcome and input name -->
         <div id="welcome">
-            <div>
-            <h1>Welcome!</h1> <br>
-            <label for="user-name">Please Enter Your Name</label> <br>
-            <input id="user-name" type="text" name="player-name" value="Player" placeholder="Player">
-        </div>
+                <h1>Welcome!</h1> <br>
+                <label for="user-name">Please Enter Your Name:</label> <br>
+                <input id="user-name" type="text" name="player-name" required>
             <div id="game-btn">
+            <button id="play-btn" class="next-btn">Let's play</button>
+            <p>Or</p>
+            <button id="rules-btn" class="next-btn">See Rules</button>
             </div>
-            <button id="play-btn">Play</button>
-            <button id="rules-btn">Rules</button>
         </div>
 
         <!-- Start the game -->
@@ -37,7 +38,7 @@
                 <div id="rock" class="choice game-cell"><i class="fas fa-hand-rock"></i></div>
                 <div id="scissors" class="choice game-cell"> <i class="fas fa-hand-scissors"></i></div>
                 <div id="lizard" class="choice game-cell"><i class="fas fa-hand-lizard"></i></div>
-                <div id="empty"></div>
+                <div id="empty">Hello <span id="player-name"></span>! Please pick one</div>
                 <div id="spock" class="choice game-cell"><i class="fas fa-hand-spock"></i></div>
             </div>
         </div>
@@ -55,15 +56,15 @@
                 <div id="userScore" class="grid-cell">Well done!</div>
                 <div id="compScore" class="grid-cell"></div>
                 <div class="grid-cell"></div>
-                <div id="play-again" class="grid-cell">Play Again</div>
+                <div id="play-again" class="grid-cell"><span class="next-btn">Play Again</span></div>
                 <div id="userWin" class="grid-cell"></div>
             </div>
         </div>
 
         <!-- Show rules -->
         <div id="rules">
-            <p>Hello <span id="user"></span>! Here are the rules</p>
-            <h2>Fun Facts</h2>
+            <h2>Hello <span id="user"></span>!</h2>
+            <h2>Here are the rules</h2>
             <h3>Paper beats Rock</h3>
             <h3>Rock beats Scissors</h3>
             <h3>Scissors beat Paper</h3>
@@ -74,9 +75,9 @@
             <h3> Scissors beat Lizard</h3>
             <h3> Paper beats Spock</h3>
             <h3>Spock beats Scissors</h3>
-            <button id="now-play">Play</button>
+            <button id="now-play" class="next-btn">Let's Play Now</button>
         </div>
-        
+
     </div>
     <footer>
 

@@ -15,6 +15,7 @@ function showGame(){
     document.getElementById('rules').style.display = 'none';
     document.getElementById('result').style.display = 'none';
     document.getElementById('play').style.display = 'block';
+    updateName();
 }
 
 let rules = document.getElementById('rules-btn');
@@ -31,6 +32,7 @@ function updateName(){
     let user = document.getElementById('user');
     user.innerHTML = userName.value;
     document.getElementById('player').innerHTML = userName.value;
+    document.getElementById('player-name').innerHTML = userName.value;
 }
 
 let items = document.getElementsByClassName('choice');
