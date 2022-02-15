@@ -37,7 +37,7 @@ header a {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  border: #1b5299 1.5px solid;
+  border: #80ced7 2px solid;
   border-radius: 35px;
   text-align: center;
   box-shadow: inset 0px 0px 200px 10px #000;
@@ -67,6 +67,7 @@ header a {
 #user-name:focus {
   border: #1b5299 1px solid;
   outline: 0;
+  padding-left: 10px;
 }
 .next-btn {
   padding: 10px 30px;
@@ -93,10 +94,11 @@ header a {
 }
 
 #empty,
+#status-report,
 #game-btn p {
   padding: 10px;
-  color: #eee;
-  font-size: 24px;
+  color: #1b5299;
+  font-size: 36px;
 }
 
 #play {
@@ -105,7 +107,7 @@ header a {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  border: #1b5299 1.5px solid;
+  border: #80ced7 2px solid;
   border-radius: 35px;
   text-align: center;
   box-shadow: inset 0px 0px 200px 10px #000;
@@ -133,7 +135,7 @@ header a {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  border: #1b5299 1.5px solid;
+  border: #80ced7 2px solid;
   border-radius: 35px;
   text-align: center;
   box-shadow: inset 0px 0px 200px 10px #000;
@@ -150,7 +152,6 @@ header a {
 }
 
 .game-cell {
-  background-image: linear-gradient(to right, #333, #eee 50%, #333);
   border-radius: 75px;
   padding: 5px;
 }
@@ -164,12 +165,28 @@ header a {
   top: 10px;
   border: #80ced7 5px solid;
   border-radius: 75px;
+  color: #1b5299;
+  box-shadow: 30px lightsalmon inset;
+}
+
+.choice-result {
+  background-color: #1b5299;
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 150px;
+  top: 10px;
+  border: #80ced7 5px solid;
+  border-radius: 75px;
+  color: #80ced7;
+  font-size: 90px;
+  padding: 30px 20px 20px 20px;
 }
 
 .choice:hover {
-  background-image: repeating-conic-gradient(#fff 10%, rgb(19, 3, 233) 20%);
-  border: #fa420a 1px solid;
-  border-radius: 75px;
+  background-color: #1b5299;
+  border: lightsalmon 7px solid;
+  color: lightsalmon;
 }
 
 .choice i {
@@ -178,7 +195,7 @@ header a {
 }
 
 #lizard i {
-  padding-left: 15px;
+  padding-left: 5px;
 }
 
 footer {
@@ -194,7 +211,7 @@ footer {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  border: #1b5299 1.5px solid;
+  border: #80ced7 2px solid;
   border-radius: 35px;
   text-align: center;
   color: #eee;

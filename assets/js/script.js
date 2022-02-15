@@ -57,11 +57,11 @@ function playGame(){
 function displayStrategy(item, comItem){
     let userChoice = document.getElementById('user-choice');
     userChoice.innerHTML = document.getElementById(item).innerHTML;
-    userChoice.classList.add('choice');
+    userChoice.classList.add('choice-result');
 
     let computerChoice = document.getElementById('computer-choice');
     computerChoice.innerHTML = comItem.innerHTML;
-    computerChoice.classList.add('choice');
+    computerChoice.classList.add('choice-result');
 }
 
 function computerPicks() {
@@ -75,14 +75,16 @@ function determineWinner(item, comItem){
     let computer = comItem.id;
     let user = item;
     let userComputer = user + computer;
-    let result = document.getElementById('userScore');
+    let result = document.getElementById('status-report');
     if (winList.includes(userComputer)){
-    result.innerHTML = user + ' beats ' + computer + '. You Won!';
+        let winner = user.charAt(0).toUpperCase()+user.slice(1);
+    result.innerHTML = winner + ' beats ' + computer + '.\n You Won!\n Congratulations!';
     } else if (user == computer){
-    result.innerHTML = 'It is a tie!';
+    result.innerHTML = 'It is a tie. \n Do you want to try again?';
     }
     else {
-        result.innerHTML = computer + ' beats ' + user + '. You lost!';
+        let winner = computer.charAt(0).toUpperCase()+computer.slice(1);
+        result.innerHTML = winner + ' beats ' + user + '.\n You lost!';
     }
 }
 
