@@ -237,3 +237,10 @@ footer {
 #rules h2.welcome-btn:hover {
   color: #eee;
 }
+
+@media (max-width: 767){
+  #container,
+  #welcome {
+    width: 100vh;
+  }
+}

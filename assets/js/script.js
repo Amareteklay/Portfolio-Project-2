@@ -30,9 +30,15 @@ function showRules(){
 function updateName(){
     let userName = document.getElementById('user-name');
     let user = document.getElementById('user');
-    user.innerHTML = userName.value;
-    document.getElementById('player').innerHTML = userName.value;
-    document.getElementById('player-name').innerHTML = userName.value;
+    if (userName.value != ''){
+        user.innerHTML = userName.value;
+        document.getElementById('player').innerHTML = userName.value;
+        document.getElementById('player-name').innerHTML = userName.value;
+        } else {
+             user.innerHTML = 'Player';
+            document.getElementById('player').innerHTML = 'Player';
+            document.getElementById('player-name').innerHTML = 'Player';
+        }
 }
 
 let items = document.getElementsByClassName('choice');
