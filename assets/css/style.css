@@ -5,42 +5,33 @@
   box-sizing: border-box;
 }
 
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient() */
-
 body {
-  background-image: linear-gradient(to right, #1b5299, #eee 14%, #1b5299, #eee 86%, #1b5299);
-}
-
-header {
-  text-align: center;
-  padding: 20px;
-  background-image: linear-gradient(to right, #eee 10%, #1b5299, #eee 90%);
-  border-bottom: #1b5299 1px solid;
-  color: #fff;
-}
-
-header a {
-  text-decoration: none;
-  color: inherit;
+  font-family: "Exo", sans-serif;
+  background-color: rgba(131, 160, 160, 0.2);
 }
 
 #container {
- 
+  background: url(../images/Rock-paper-scissors-lizard-spock.png) center center no-repeat;
+  background-size: cover;
   margin: 0 auto;
-  width: 900px;
-  height: 520px;
+  width: 130vh;
+  height: 90vh;
+  border-radius: 35px;
   position: relative;
-}
+  top: 30px;
+  overflow: hidden;
+ }
 
 #welcome {
-  background-image: linear-gradient(to right, #1b5299, #80ced7 50%, #1b5299);
+  background-color: #218380;
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  border: #80ced7 2px solid;
+  border: #80ced7 1px solid;
   border-radius: 35px;
   text-align: center;
   box-shadow: inset 0px 0px 200px 10px #000;
+  opacity: 0.90;
 }
 
 #welcome h1 {
@@ -83,6 +74,7 @@ header a {
 .next-btn:hover {
   border: lightsalmon 2px solid;
   color: lightsalmon;
+  cursor: pointer;
 }
 
 .next-btn {
@@ -97,20 +89,21 @@ header a {
 #status-report,
 #game-btn p {
   padding: 10px;
-  color: #1b5299;
+  color: #eee;
   font-size: 36px;
 }
 
 #play {
   display: none;
-  background-image: linear-gradient(to right, #1b5299, #80ced7 50%, #1b5299);
+  background-color: #218380;
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  border: #80ced7 2px solid;
+  border: #80ced7 1px solid;
   border-radius: 35px;
   text-align: center;
   box-shadow: inset 0px 0px 200px 10px #000;
+  opacity: 0.95;
 }
 
 .game-grid {
@@ -119,9 +112,12 @@ header a {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
 }
 
+.lizard-rock {
+  display: inline-block;
+}
 .feedback-cell {
   color: #eee;
   padding: 10px;
@@ -131,14 +127,15 @@ header a {
 
 #result {
   display: none;
-  background-image: linear-gradient(to right, #1b5299, #80ced7 50%, #1b5299);
+  background-color: #218380;
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  border: #80ced7 2px solid;
+  border: #80ced7 1px solid;
   border-radius: 35px;
   text-align: center;
   box-shadow: inset 0px 0px 200px 10px #000;
+  opacity: 0.95;
 }
 
 #grid-area {
@@ -170,7 +167,7 @@ header a {
 }
 
 .choice-result {
-  background-color: #1b5299;
+  background-color: #fff;
   position: relative;
   margin: 0 auto;
   height: 150px;
@@ -178,7 +175,7 @@ header a {
   top: 10px;
   border: #80ced7 5px solid;
   border-radius: 75px;
-  color: #80ced7;
+  color: #1b5299;
   font-size: 90px;
   padding: 30px 20px 20px 20px;
 }
@@ -187,6 +184,7 @@ header a {
   background-color: #1b5299;
   border: lightsalmon 7px solid;
   color: lightsalmon;
+  cursor: pointer;
 }
 
 .choice i {
@@ -199,30 +197,35 @@ header a {
 }
 
 footer {
-  height: 20%;
-  margin-bottom: 0;
-  background-image: linear-gradient(0deg, #4383c3 20%, #30b4cb 90%);
+  margin-top: 30px;
+  height: 45px;
+  background-color: #218380;
+  color: #eee;
+  position: relative;
 }
-
+#footer-about,
+#footer-follow {
+display: inline-block;
+padding-left: 27%;
+}
 /* Rules page */
 #rules {
   display: none;
-  background-image: linear-gradient(90deg, #1b5299, #80ced7 20%, #1b5299, #80ced7 75%, #1b5299);
+  background-color: #218380;
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  border: #80ced7 2px solid;
+  border: #80ced7 1px solid;
   border-radius: 35px;
   text-align: center;
-  color: #eee;
   box-shadow: inset 0px 0px 200px 10px #000;
+  opacity: 0.8;
 }
 
-#rules h2 {
-  padding: 10px;
-}
+#rules h2, 
 #rules h3 {
   padding-bottom: 10px;
+  color: #eee;
 }
 
 #now-play {
