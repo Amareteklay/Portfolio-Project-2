@@ -36,7 +36,7 @@
                 <div></div>
                 <div></div>
                 <div id="spock" class="choice game-cell"><i class="fas fa-hand-spock"></i></div>
-                <div></div>
+                <div class="feedback-cell">Please choose one</div>
                 <div id="paper" class="choice game-cell"><i class="fas fa-hand-paper"></i></div>
                 <div></div>
                 <div></div>
@@ -51,25 +51,33 @@
         <!-- Display results -->
         <div id="result">
             <div id="grid-area">
-                <div id="player" class="grid-cell feedback-cell">Player</div>
-                <div id="player-name" class="grid-cell"></div>
-                <div class="grid-cell feedback-cell">Computer</div>
+                <div></div>
+                <div class="grid-cell feedback-cell"><span id="player-name" class="grid-cell feedback-cell"></span>:<span id="player-score" class="grid-cell feedback-cell"> 0</span> </div>
+                <div></div>
+                <div class="grid-cell feedback-cell">Computer: <span id="computer-score"> 0</span></div>
+                <div></div>
+                <div></div>
                 <div id="user-choice" class="grid-cell"></div>
-                <div id="status-report" class="grid-cell"></div>
+                <div id="win-lose" class="feedback-cell"></div>
                 <div id="computer-choice" class="grid-cell"></div>
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="feedback-cell"> <span id="winner"></span> <span id="status"></span> <span id="loser"></span> </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
                 <div id="play-again" class="grid-cell"><span class="next-btn">Play Again</span></div>
-                <div id="userWin" class="grid-cell"></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
 
         <!-- Show rules -->
         <div id="rules">
-            <h2>Hello <span id="user"></span>!</h2>
-            <h2>Here are the rules</h2>
+            <h2>Hello <span id="user"></span>! <br> Here are the rules</h2>
+            <hr>
             <h3>Paper beats Rock</h3>
             <h3>Rock beats Scissors</h3>
             <h3>Scissors beat Paper</h3>

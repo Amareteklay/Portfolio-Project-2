@@ -9,6 +9,7 @@ let playNow = document.getElementById('now-play');
 playNow.addEventListener('click', showGame);
 
 document.getElementById('play-again').addEventListener('click', showGame);
+document.getElementById('play-again').addEventListener('click', resetChoiceColor);
 
 function showGame(){
     document.getElementById('welcome').style.display = 'none';
@@ -17,6 +18,27 @@ function showGame(){
     document.getElementById('play').style.display = 'block';
     updateName();
 }
+
+function resetChoiceColor(){
+    let userChoice = document.getElementById('user-choice');
+    if (userChoice.classList.contains('loser')){
+        userChoice.classList.remove('loser');
+    } else if (userChoice.classList.contains('winner')){
+        userChoice.classList.remove('winner');
+} else if (userChoice.classList.contains('draw')){
+    userChoice.classList.remove('draw');
+};
+    let comChoice = document.getElementById('computer-choice');
+    if (comChoice.classList.contains('winner')){
+        comChoice.classList.remove('winner');
+    } else if (comChoice.classList.contains('loser')){
+        comChoice.classList.remove('loser');
+    }
+    else if (comChoice.classList.contains('draw')){
+        comChoice.classList.remove('draw');
+    }
+};
+
 
 let rules = document.getElementById('rules-btn');
 rules.addEventListener('click', showRules);
@@ -32,11 +54,9 @@ function updateName(){
     let user = document.getElementById('user');
     if (userName.value != ''){
         user.innerHTML = userName.value;
-        document.getElementById('player').innerHTML = userName.value;
         document.getElementById('player-name').innerHTML = userName.value;
         } else {
              user.innerHTML = 'Player';
-            document.getElementById('player').innerHTML = 'Player';
             document.getElementById('player-name').innerHTML = 'Player';
         }
 }
@@ -77,20 +97,41 @@ function computerPicks() {
 
 const winList = ['paperrock', 'rockscissors', 'scissorspaper', 'lizardpaper', 'spockrock', 'rocklizard', 'lizardspock', 'scissorslizard', 'paperspock', 'spockscissors'];
 
+let userScore = 0;
+let computerScore = 0;
 function determineWinner(item, comItem){
     let computer = comItem.id;
     let user = item;
     let userComputer = user + computer;
-    let result = document.getElementById('status-report');
+    let winner = document.getElementById('winner');
+    let loser = document.getElementById('loser');
+    let status = document.getElementById('status');
     if (winList.includes(userComputer)){
-        let winner = user.charAt(0).toUpperCase()+user.slice(1);
-    result.innerHTML = winner + ' beats ' + computer + '.\n You Won!\n Congratulations!';
+        winner.innerHTML = user.charAt(0).toUpperCase()+user.slice(1);
+        loser.innerHTML = computer.charAt(0).toUpperCase()+computer.slice(1);
+        status.innerHTML = 'Beats';
+        document.getElementById('user-choice').classList.add('winner');
+        document.getElementById('computer-choice').classList.add('loser');
+        document.getElementById('win-lose').innerHTML = 'You win!';
+        userScore +=1;
+        document.getElementById('player-score').innerHTML = userScore;
     } else if (user == computer){
-    result.innerHTML = 'It is a tie. \n Do you want to try again?';
+        document.getElementById('user-choice').classList.add('draw');
+        document.getElementById('computer-choice').classList.add('draw');
+        status.innerHTML = 'It is a draw.';
+        document.getElementById('win-lose').innerHTML = '';
+        winner.innerHTML = '';
+        loser.innerHTML = '';
     }
     else {
-        let winner = computer.charAt(0).toUpperCase()+computer.slice(1);
-        result.innerHTML = winner + ' beats ' + user + '.\n You lost!';
+        winner.innerHTML = computer.charAt(0).toUpperCase()+computer.slice(1);
+        loser.innerHTML = user.charAt(0).toUpperCase()+user.slice(1);
+        status.innerHTML = 'Beats'
+        document.getElementById('user-choice').classList.add('loser');
+        document.getElementById('computer-choice').classList.add('winner');
+        document.getElementById('win-lose').innerHTML = 'You lose!';
+        computerScore +=1;
+        document.getElementById('computer-score').innerHTML = computerScore;
     }
 }
 
