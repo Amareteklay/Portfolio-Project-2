@@ -10,15 +10,18 @@ body {
   background-color: rgba(28, 39, 39, 0.2);
   background: url(../images/bbt.jpg) center center no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 #container {
- /* background: url(../images/Rock-paper-scissors-lizard-spock.png) center center no-repeat;
-  background-size: cover; */
   margin: 0 auto;
-  width: 130vh;
+  width: 65%;
   height: 90vh;
+  background-color: #218380;
+  border: #80ced7 1px solid;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: inset 0px 0px 200px 10px #000;
   border-radius: 15px;
   position: relative;
   top: 30px;
@@ -30,29 +33,15 @@ body {
 #rules,
 #result,
 #story {
-  background-color: #218380;
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  border: #80ced7 1px solid;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: inset 0px 0px 200px 10px #000;
 }
 
-#play {
-  display: none;
-  opacity: 0.95;
-}
-
-#result {
-  display: none;
-  opacity: 0.95;
-}
-
+#play, 
+#result,
 #rules {
   display: none;
-  opacity: 0.8;
 }
 
 .top-icon {
@@ -74,6 +63,9 @@ body {
   float: right;
 }
 
+#logo {
+  font-size: 12px;
+}
 #welcome h1 {
   padding: 20px;
   color: #eee;
@@ -222,12 +214,13 @@ body {
 }
 
 footer {
-  height: 30px;
+  height: 45px;
   background-color: #eee;
   color: #218380;
   position: relative;
-  top: 33px;
+  top: 27px;
   padding-top: 5px;
+  margin-top: 5px;
 }
 #footer-about,
 #footer-follow {
@@ -285,9 +278,18 @@ color: #eee;
   border: #80ced7 3px solid;
   border-radius: 5px;
 }
-@media (max-width: 767){
-  #container,
-  #welcome {
-    width: 100vh;
+@media (max-width: 1024px){
+  #container
+  {
+    width: 75%;
+  }
+}
+
+@media (max-width: 767px) {
+  #container {
+    width: 100%;
+  }
+  .feedback-cell {
+    font-size: 1.25rem;
   }
 }
