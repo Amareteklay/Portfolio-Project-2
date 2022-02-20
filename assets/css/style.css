@@ -49,12 +49,17 @@ body {
   color: #eee;
   font-size: 24px;
 }
-.top-icon a {
-  color: #eee;
+
+a {
   text-decoration: none;
+  color: inherit;
 }
 
-#home-icon {
+.top-icon a {
+  color: #eee;
+}
+
+.home-icon {
   margin-left: 0;
 }
 
@@ -68,7 +73,7 @@ body {
   cursor: pointer;
   color: lightsalmon;
 }
-#logo {
+.logo {
   font-size: 12px;
 }
 #welcome h1 {

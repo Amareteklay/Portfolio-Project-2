@@ -146,3 +146,10 @@ let close = document.getElementById('close-icon');
 close.addEventListener('click', function(){
     modal.style.display = 'none';
 })
+
+// Code from https://www.w3schools.com/howto/howto_css_modals.asp
+window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  })
