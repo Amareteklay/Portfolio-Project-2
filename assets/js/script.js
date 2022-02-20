@@ -135,3 +135,14 @@ function determineWinner(item, comItem){
     }
 }
 
+let modal = document.getElementById('modal');
+let questionIcon = document.getElementsByClassName('question-icon');
+for (let i=0; i<questionIcon.length; i++) {
+        questionIcon[i].addEventListener('click', function() {  
+            modal.style.display = "block";
+        })}
+
+let close = document.getElementById('close-icon');
+close.addEventListener('click', function(){
+    modal.style.display = 'none';
+})

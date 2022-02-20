@@ -58,11 +58,16 @@ body {
   margin-left: 0;
 }
 
-#question-icon {
+.question-icon {
   margin-right: 0;
   float: right;
+  color: #1b5299;
 }
 
+.question-icon:hover {
+  cursor: pointer;
+  color: lightsalmon;
+}
 #logo {
   font-size: 12px;
 }
@@ -213,6 +218,40 @@ body {
   padding-left: 5px;
 }
 
+#modal {
+  display: none;
+  width: 65%;
+  height: 90vh;
+  left: 17.5%;
+  top: 30px;
+  position: fixed;
+  background-color: #80ced7;
+  border-radius: 15px;
+  color: #eee;
+  z-index: 5;
+}
+
+#modal ul {
+  padding-top: 45px;
+}
+#modal li {
+  list-style: none;
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+#close-icon {
+  color: #1b5299;
+  font-size: 24px;
+  margin: 5px;
+  float: right;
+}
+
+#close-icon:hover {
+  cursor: pointer;
+  color: #ffa07a;
+}
+
 footer {
   height: 45px;
   background-color: #eee;
@@ -222,6 +261,7 @@ footer {
   padding-top: 5px;
   margin-top: 5px;
 }
+
 #footer-about,
 #footer-follow {
 display: inline-block;

@@ -16,20 +16,24 @@
 
         <!-- welcome and input name -->
         <div id="welcome">
-            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"><span id="logo">Rock Paper Scissors Lizard Spock</span></i></a> <a href="#" id="question-icon"><i class="far fa-question-circle"></i></a></div>
-                <h1>Welcome!</h1> <br>
-                <label for="user-name">Please Enter Your Name:</label> <br>
-                <input id="user-name" type="text" name="player-name" required />
-                <div id="game-btn">
-            <button id="play-btn" type="submit" class="next-btn">Let's play</button>
-            <p>Or</p>
-            <button id="rules-btn" type="submit" class="next-btn">See Rules</button>
+            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"><span id="logo">Rock Paper
+                            Scissors Lizard Spock</span></i></a> <span class="question-icon"><i
+                        class="far fa-question-circle"></i></span></div>
+            <h1>Welcome!</h1> <br>
+            <label for="user-name">Please Enter Your Name:</label> <br>
+            <input id="user-name" type="text" name="player-name" required />
+            <div id="game-btn">
+                <button id="play-btn" type="submit" class="next-btn">Let's play</button>
+                <p>Or</p>
+                <button id="rules-btn" type="submit" class="next-btn">See Rules</button>
             </div>
         </div>
 
         <!-- Start the game -->
         <div id="play">
-            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"><span id="logo">Rock Paper Scissors Lizard Spock</span></i></a> <a href="#" id="question-icon"><i class="far fa-question-circle"></i></a></div>
+            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"><span id="logo">Rock Paper
+                Scissors Lizard Spock</span></i></a> <span class="question-icon"><i
+            class="far fa-question-circle"></i></span></div>
             <div class="game-grid">
                 <div></div>
                 <div></div>
@@ -57,10 +61,14 @@
 
         <!-- Display results -->
         <div id="result">
-            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"><span id="logo">Rock Paper Scissors Lizard Spock</span></i></a> <a href="#" id="question-icon"><i class="far fa-question-circle"></i></a></div>
+            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"><span id="logo">Rock Paper
+                Scissors Lizard Spock</span></i></a> <span class="question-icon"><i
+            class="far fa-question-circle"></i></span></div>
             <div id="grid-area">
                 <div></div>
-                <div class="grid-cell feedback-cell"><span id="player-name" class="grid-cell feedback-cell"></span>:<span id="player-score" class="grid-cell feedback-cell"> 0</span> </div>
+                <div class="grid-cell feedback-cell"><span id="player-name"
+                        class="grid-cell feedback-cell"></span>:<span id="player-score" class="grid-cell feedback-cell">
+                        0</span> </div>
                 <div></div>
                 <div class="grid-cell feedback-cell">Computer: <span id="computer-score"> 0</span></div>
                 <div></div>
@@ -71,7 +79,8 @@
                 <div></div>
                 <div></div>
                 <div></div>
-                <div class="feedback-cell"> <span id="winner"></span> <span id="status"></span> <span id="loser"></span> </div>
+                <div class="feedback-cell"> <span id="winner"></span> <span id="status"></span> <span id="loser"></span>
+                </div>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -89,7 +98,8 @@
 
         <!-- Show rules -->
         <div id="rules">
-            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"><span id="logo">Rock Paper Scissors Lizard Spock</span></i></a> <a href="#" id="question-icon"><i class="far fa-question-circle"></i></a></div>
+            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"><span id="logo">Rock Paper
+                Scissors Lizard Spock</span></i></a></div>
             <h2>Hello <span id="user"></span>! <br> Here is a summary of the rules.</h2>
             <ul>
                 <li>
@@ -125,16 +135,55 @@
             </ul>
             <button id="now-play" class="next-btn">Let's Play Now</button>
         </div>
-
+        <!-- Modal -->
+        <div id="modal">
+            <div> <span id="close-icon"><i class="far fa-times-circle"></i></span>
+                <ul>
+                    <li>
+                        Paper <strong>COVERS</strong> Rock
+                    </li>
+                    <li>
+                        Rock <strong>CRUSHES</strong> Scissors
+                    </li>
+                    <li>
+                        Scissors <strong>CUTS</strong> Paper
+                    </li>
+                    <li>
+                        Lizard <strong>EATS</strong> Paper
+                    </li>
+                    <li>
+                        Spock <strong>VAPORIZES</strong> Rock
+                    </li>
+                    <li>
+                        Rock <strong>CRUSHES</strong> Lizard
+                    </li>
+                    <li>
+                        Lizard <strong>POISONS</strong> Spock
+                    </li>
+                    <li>
+                        Scissors <strong>DECAPITATES</strong> Lizard
+                    </li>
+                    <li>
+                        Paper <strong>DISPROVES</strong> Spock
+                    </li>
+                    <li>
+                        Spock <strong>SMASHES</strong> Scissors
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
     <footer>
         <div id="footer-about">
             <p><a href="story.html">About the Game </a></p>
         </div>
         <div id="footer-follow">
-            <p>Follow me on: <a href="#"> <i class="fab fa-github"></i></a> 
-                <a href="#"><i class="fab fa-linkedin"></i></a> 
-                <a href="#"><i class="fab fa-twitter"></i></a></p>
+            <p>Follow me on: <a href="#"> <i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </p>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/1334675705.js" crossorigin="anonymous"></script>
