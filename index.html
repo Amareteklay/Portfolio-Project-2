@@ -16,6 +16,7 @@
 
         <!-- welcome and input name -->
         <div id="welcome">
+            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"></i></a> <a href="#" id="question-icon"><i class="far fa-question-circle"></i></a></div>
                 <h1>Welcome!</h1> <br>
                 <label for="user-name">Please Enter Your Name:</label> <br>
                 <input id="user-name" type="text" name="player-name" required />
@@ -28,15 +29,16 @@
 
         <!-- Start the game -->
         <div id="play">
+            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"></i></a> <a href="#" id="question-icon"><i class="far fa-question-circle"></i></a></div>
             <div class="game-grid">
                 <div></div>
                 <div></div>
-                <div id="scissors" class="choice game-cell"> <i class="fas fa-hand-scissors"></i></div>
+                <div class="feedback-cell">Please choose one</div>
                 <div></div>
                 <div></div>
                 <div></div>
                 <div id="spock" class="choice game-cell"><i class="fas fa-hand-spock"></i></div>
-                <div class="feedback-cell">Please choose one</div>
+                <div id="scissors" class="choice game-cell"> <i class="fas fa-hand-scissors"></i></div>
                 <div id="paper" class="choice game-cell"><i class="fas fa-hand-paper"></i></div>
                 <div></div>
                 <div></div>
@@ -45,11 +47,17 @@
                 <div id="rock" class="choice game-cell"> <i class="fas fa-hand-rock"></i></div>
                 <div></div>
                 <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
 
         <!-- Display results -->
         <div id="result">
+            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"></i></a> <a href="#" id="question-icon"><i class="far fa-question-circle"></i></a></div>
             <div id="grid-area">
                 <div></div>
                 <div class="grid-cell feedback-cell"><span id="player-name" class="grid-cell feedback-cell"></span>:<span id="player-score" class="grid-cell feedback-cell"> 0</span> </div>
@@ -71,37 +79,62 @@
                 <div id="play-again" class="grid-cell"><span class="next-btn">Play Again</span></div>
                 <div></div>
                 <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
 
         <!-- Show rules -->
         <div id="rules">
-            <h2>Hello <span id="user"></span>! <br> Here are the rules</h2>
-            <hr>
-            <h3>Paper beats Rock</h3>
-            <h3>Rock beats Scissors</h3>
-            <h3>Scissors beat Paper</h3>
-            <h3>Lizard beats Paper</h3>
-            <h3>Spock beats Rock</h3>
-            <h3>Rock beats Lizard</h3>
-            <h3>Lizard beats Spock</h3>
-            <h3> Scissors beat Lizard</h3>
-            <h3> Paper beats Spock</h3>
-            <h3>Spock beats Scissors</h3>
+            <div class="top-icon"><a id="home-icon" href="index.html"><i class="fas fa-home"></i></a> <a href="#" id="question-icon"><i class="far fa-question-circle"></i></a></div>
+            <h2>Hello <span id="user"></span>! <br> Here is a summary of the rules.</h2>
+            <ul>
+                <li>
+                    Paper <strong>beats</strong> Rock
+                </li>
+                <li>
+                    Rock <strong>beats</strong> Scissors
+                </li>
+                <li>
+                    Scissors <strong>beats</strong> Paper
+                </li>
+                <li>
+                    Lizard <strong>beats</strong> Paper
+                </li>
+                <li>
+                    Spock <strong>beats</strong> Rock
+                </li>
+                <li>
+                    Rock <strong>beats</strong> Lizard
+                </li>
+                <li>
+                    Lizard <strong>beats</strong> Spock
+                </li>
+                <li>
+                    Scissors <strong>beats</strong> Lizard
+                </li>
+                <li>
+                    Paper <strong>beats</strong> Spock
+                </li>
+                <li>
+                    Spock <strong>beats</strong> Scissors
+                </li>
+            </ul>
             <button id="now-play" class="next-btn">Let's Play Now</button>
         </div>
 
     </div>
     <footer>
         <div id="footer-about">
-            <h4>
-            About the Game
-            </h4>
+            <p><a href="story.html">About the Game </a></p>
         </div>
         <div id="footer-follow">
-            <h4>
-                Follow me:
-            </h4>
+            <p>Follow me on: <a href="#"> <i class="fab fa-github"></i></a> 
+                <a href="#"><i class="fab fa-linkedin"></i></a> 
+                <a href="#"><i class="fab fa-twitter"></i></a></p>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/1334675705.js" crossorigin="anonymous"></script>

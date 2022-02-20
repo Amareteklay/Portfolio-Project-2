@@ -7,31 +7,71 @@
 
 body {
   font-family: "Exo", sans-serif;
-  background-color: rgba(131, 160, 160, 0.2);
+  background-color: rgba(28, 39, 39, 0.2);
+  background: url(../images/bbt.jpg) center center no-repeat;
+  background-size: cover;
+  opacity: 0.8;
 }
 
 #container {
-  background: url(../images/Rock-paper-scissors-lizard-spock.png) center center no-repeat;
-  background-size: cover;
+ /* background: url(../images/Rock-paper-scissors-lizard-spock.png) center center no-repeat;
+  background-size: cover; */
   margin: 0 auto;
   width: 130vh;
   height: 90vh;
-  border-radius: 35px;
+  border-radius: 15px;
   position: relative;
   top: 30px;
   overflow: hidden;
  }
 
-#welcome {
+#welcome,
+#play,
+#rules,
+#result,
+#story {
   background-color: #218380;
   margin: 0 auto;
   height: 100%;
   width: 100%;
   border: #80ced7 1px solid;
-  border-radius: 35px;
+  border-radius: 15px;
   text-align: center;
   box-shadow: inset 0px 0px 200px 10px #000;
-  opacity: 0.90;
+}
+
+#play {
+  display: none;
+  opacity: 0.95;
+}
+
+#result {
+  display: none;
+  opacity: 0.95;
+}
+
+#rules {
+  display: none;
+  opacity: 0.8;
+}
+
+.top-icon {
+  text-align: left;
+  color: #eee;
+  font-size: 24px;
+}
+.top-icon a {
+  color: #eee;
+  text-decoration: none;
+}
+
+#home-icon {
+  margin-left: 0;
+}
+
+#question-icon {
+  margin-right: 0;
+  float: right;
 }
 
 #welcome h1 {
@@ -93,19 +133,6 @@ body {
   font-size: 36px;
 }
 
-#play {
-  display: none;
-  background-color: #218380;
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  border: #80ced7 1px solid;
-  border-radius: 35px;
-  text-align: center;
-  box-shadow: inset 0px 0px 200px 10px #000;
-  opacity: 0.95;
-}
-
 .game-grid {
   display: grid;
   row-gap: 30px;
@@ -123,19 +150,6 @@ body {
   padding: 10px;
   border-radius: 20px;
   font-size: 2rem;
-}
-
-#result {
-  display: none;
-  background-color: #218380;
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  border: #80ced7 1px solid;
-  border-radius: 35px;
-  text-align: center;
-  box-shadow: inset 0px 0px 200px 10px #000;
-  opacity: 0.95;
 }
 
 #grid-area {
@@ -208,37 +222,32 @@ body {
 }
 
 footer {
-  margin-top: 30px;
-  height: 45px;
-  background-color: #218380;
-  color: #eee;
+  height: 30px;
+  background-color: #eee;
+  color: #218380;
   position: relative;
+  top: 33px;
+  padding-top: 5px;
 }
 #footer-about,
 #footer-follow {
 display: inline-block;
 padding-left: 27%;
 }
-/* Rules page */
-#rules {
-  display: none;
-  background-color: #218380;
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  border: #80ced7 1px solid;
-  border-radius: 35px;
-  text-align: center;
-  box-shadow: inset 0px 0px 200px 10px #000;
-  opacity: 0.8;
+
+footer p a {
+color: #218380;
+text-decoration: none;
+margin-left: 20px;
 }
+/* Rules page */
 
 #rules h2 {
 padding: 20px;
 color: #eee;
 }
 
-#rules h3 {
+#rules li {
   padding-bottom: 10px;
   color: #eee;
 }
@@ -256,6 +265,26 @@ color: #eee;
   color: #eee;
 }
 
+#story h1 {
+  color: #eee;
+  padding: 10px;
+}
+
+#story p {
+  text-align: left;
+  color: #eee;
+  font-size: 18px;
+  padding: 10px 45px;
+}
+
+#story p a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  border: #80ced7 3px solid;
+  border-radius: 5px;
+}
 @media (max-width: 767){
   #container,
   #welcome {

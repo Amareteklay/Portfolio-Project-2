@@ -35,3 +35,7 @@
 ### Media
 
 - Background image was taken from [Seekpng](https://www.seekpng.com/ima/u2w7w7o0i1t4o0a9/)
+- background image was taken from [The Geek Twins](https://1.bp.blogspot.com/-zcSCfzb8hJg/URJvYACX8MI/AAAAAAAAYMs/4hg_abHlQ2M/s1600/the-big-bang-theory-rock-paper-scissors-lizard-spock-the-rules-600x318.jpg)
+
+### Content'
+- The content on the story page was copied from [The big bang theory](https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/#:~:text=Rock%20Paper%20Scissors%20Lizard%20Spock%20is%20an%20extension%20of%20the,would%20end%20in%20a%20tie.)
