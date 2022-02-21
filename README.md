@@ -61,6 +61,9 @@ I have used colors that are associated with calmness and positive feelings.
 ## Features
 To answer the user stories, the following features have been implemented.
 
+## UX
+- No scroll
+
 ## Logic
 The logic involved while implementing the aforementioned features to answer the user stories behind each feature is presented here. 
 

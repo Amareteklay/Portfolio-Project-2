@@ -16,7 +16,8 @@
 
         <!-- welcome and input name -->
         <div id="welcome">
-            <div class="top-icon"><a class="home-icon" href="index.html"><i class="fas fa-home"><span class="logo">Rock Paper
+            <div class="top-icon"><a class="home-icon" href="index.html"><i class="fas fa-home"><span class="logo">Rock
+                            Paper
                             Scissors Lizard Spock</span></i></a> <span class="question-icon"><i
                         class="far fa-question-circle"></i></span></div>
             <h1>Welcome!</h1> <br>
@@ -31,108 +32,89 @@
 
         <!-- Start the game -->
         <div id="play">
-            <div class="top-icon"><a class="home-icon" href="index.html"><i class="fas fa-home"><span class="logo">Rock Paper
-                Scissors Lizard Spock</span></i></a> <span class="question-icon"><i
-            class="far fa-question-circle"></i></span></div>
-            <div class="game-grid">
-                <div></div>
-                <div></div>
-                <div class="feedback-cell">Please choose one</div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div id="spock" class="choice game-cell"><i class="fas fa-hand-spock"></i></div>
-                <div id="scissors" class="choice game-cell"> <i class="fas fa-hand-scissors"></i></div>
-                <div id="paper" class="choice game-cell"><i class="fas fa-hand-paper"></i></div>
-                <div></div>
-                <div></div>
-                <div id="lizard" class="choice game-cell"><i class="fas fa-hand-lizard"></i></div>
-                <div></div>
-                <div id="rock" class="choice game-cell"> <i class="fas fa-hand-rock"></i></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <div class="top-icon"><a class="home-icon" href="index.html"><i class="fas fa-home"><span class="logo">Rock
+                            Paper
+                            Scissors Lizard Spock</span></i></a> <span class="question-icon"><i
+                        class="far fa-question-circle"></i></span>
+                    </div>
+                <div id="prompt-message" class="feedback-cell">Please choose one</div>
+                <div id="choice-container">
+                  <div id="spock" class="choice"><i class="fas fa-hand-spock"></i></div>
+                   <div id="scissors" class="choice"><i class="fas fa-hand-scissors"></i></div>
+                   <div id="paper" class="choice"><i class="fas fa-hand-paper"></i></div>
+                   <div id="lizard" class="choice"><i class="fas fa-hand-lizard"></i></div>
+                   <div id="rock" class="choice"><i class="fas fa-hand-rock"></i></div>
+                 </div>                
         </div>
 
         <!-- Display results -->
         <div id="result">
-            <div class="top-icon"><a class="home-icon" href="index.html"><i class="fas fa-home"><span class="logo">Rock Paper
-                Scissors Lizard Spock</span></i></a> <span class="question-icon"><i
-            class="far fa-question-circle"></i></span></div>
-            <div id="grid-area">
-                <div></div>
-                <div class="grid-cell feedback-cell"><span id="player-name"
-                        class="grid-cell feedback-cell"></span>:<span id="player-score" class="grid-cell feedback-cell">
-                        0</span> </div>
-                <div></div>
-                <div class="grid-cell feedback-cell">Computer: <span id="computer-score"> 0</span></div>
-                <div></div>
-                <div></div>
-                <div id="user-choice" class="grid-cell"></div>
-                <div id="win-lose" class="feedback-cell"></div>
-                <div id="computer-choice" class="grid-cell"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div class="feedback-cell"> <span id="winner"></span> <span id="status"></span> <span id="loser"></span>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div id="restart-game" class="grid-cell"><a class="next-btn" href="index.html">Restart Game</a></div>
-                <div id="play-again" class="grid-cell"><span class="next-btn">Play Again</span></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="top-icon"><a class="home-icon" href="index.html"><i class="fas fa-home"><span class="logo">Rock
+                            Paper
+                            Scissors Lizard Spock</span></i></a> <span class="question-icon"><i
+                        class="far fa-question-circle"></i></span>
             </div>
+            <div id="score-area">
+                <div id="uscore" class="feedback-cell">
+                    <span id="player-name"></span>:
+                    <span id="player-score">0</span>
+                </div>
+                <div id="comscore" class="feedback-cell">
+                    <span>Computer:</span>
+                    <span id="computer-score">0</span>
+                </div>
+            </div>
+            <div id="choice-made">
+                <div id="user-choice" class="choice-made"></div>
+                <span id="win-lose" class="feedback-cell"></span>
+                <div id="computer-choice" class="choice-made"></div>
+            </div>
+            <div class="feedback-cell"> <span id="winner"></span>
+                     <span id="status"></span> <span id="loser"></span>
+            </div>
+            <div id="play-again"><span class="next-btn">Play Again</span></div>
+            <div id="restart-game"><a class="next-btn" href="index.html">Restart Game</a></div>
         </div>
 
         <!-- Show rules -->
         <div id="rules">
-            <div class="top-icon"><a class="home-icon" href="index.html"><i class="fas fa-home"><span class="logo">Rock Paper
-                Scissors Lizard Spock</span></i></a></div>
-            <h2>Hello <span id="user"></span>! <br> Here is a summary of the rules.</h2>
+            <div class="top-icon"><a class="home-icon" href="index.html"><i class="fas fa-home"><span class="logo">Rock
+                            Paper
+                            Scissors Lizard Spock</span></i></a></div>
+            <h2>Hello <span id="user"></span>!</h2>
             <ul>
                 <li>
-                    Paper <strong>COVERS</strong> Rock
+                    Paper <strong>COVERS</strong> Rock.
                 </li>
                 <li>
-                    Rock <strong>CRUSHES</strong> Scissors
+                    Rock <strong>CRUSHES</strong> Scissors.
                 </li>
                 <li>
-                    Scissors <strong>CUTS</strong> Paper
+                    Scissors <strong>CUTS</strong> Paper.
                 </li>
                 <li>
-                    Lizard <strong>EATS</strong> Paper
+                    Lizard <strong>EATS</strong> Paper.
                 </li>
                 <li>
-                    Spock <strong>VAPORIZES</strong> Rock
+                    Spock <strong>VAPORIZES</strong> Rock.
                 </li>
                 <li>
-                    Rock <strong>CRUSHES</strong> Lizard
+                    Rock <strong>CRUSHES</strong> Lizard.
                 </li>
                 <li>
                     Lizard <strong>POISONS</strong> Spock
                 </li>
                 <li>
-                    Scissors <strong>DECAPITATES</strong> Lizard
+                    Scissors <strong>DECAPITATES</strong> Lizard.
                 </li>
                 <li>
-                    Paper <strong>DISPROVES</strong> Spock
+                    Paper <strong>DISPROVES</strong> Spock.
                 </li>
                 <li>
-                    Spock <strong>SMASHES</strong> Scissors
+                    Spock <strong>SMASHES</strong> Scissors.
                 </li>
             </ul>
+            <h2>Good luck!</h2>
             <button id="now-play" class="next-btn">Let's Play Now</button>
         </div>
         <!-- Modal -->
@@ -180,9 +162,12 @@
             <p><a href="story.html">About the Game </a></p>
         </div>
         <div id="footer-follow">
-            <p>Follow me on: <a href="https://github.com/Amareteklay/" target="_blank" aria-label="Go to github (opens in new tab)"> <i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/amareteklay/" target="_blank" aria-label="Go to linkedin (opens in new tab)"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/Amareteklay" target="_blank" aria-label="Go to twitter (opens in new tab)"><i class="fab fa-twitter"></i></a>
+            <p>Follow me on: <a href="https://github.com/Amareteklay/" target="_blank"
+                    aria-label="Go to github (opens in new tab)"> <i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/amareteklay/" target="_blank"
+                    aria-label="Go to linkedin (opens in new tab)"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/Amareteklay" target="_blank"
+                    aria-label="Go to twitter (opens in new tab)"><i class="fab fa-twitter"></i></a>
             </p>
         </div>
     </footer>
