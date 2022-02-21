@@ -66,15 +66,17 @@ a {
 .question-icon {
   margin-right: 0;
   float: right;
-  color: #1b5299;
+  color: #eee;
 }
 
 .question-icon:hover {
   cursor: pointer;
-  color: lightsalmon;
+  color: #ffa07a;
 }
+
 .logo {
-  font-size: 12px;
+  font-size: 14px;
+  color: #ffa07a;
 }
 #welcome h1 {
   padding: 20px;
@@ -106,6 +108,10 @@ a {
   padding: 10px 30px;
   border: #80ced7 2px solid;
   border-radius: 10px;
+  margin-top: 10px;
+  width: 150px;
+  background-color: #1b5299;
+  color: #eee;
 }
 
 .welcome-btn a {
@@ -117,14 +123,6 @@ a {
   border: lightsalmon 2px solid;
   color: lightsalmon;
   cursor: pointer;
-}
-
-.next-btn {
-  margin-top: 10px;
-  width: 150px;
-  background-color: #1b5299;
-  box-shadow: #30b4cb;
-  color: #eee;
 }
 
 #empty,
@@ -173,6 +171,7 @@ a {
   color: orangered;
   border: orangered 5px solid;
 }
+
 .draw {
   color: #1b5299;
   border: #1b5299 5px solid;
@@ -192,7 +191,6 @@ a {
   border: #80ced7 5px solid;
   border-radius: 75px;
   color: #1b5299;
-  box-shadow: 30px lightsalmon inset;
 }
 
 .choice-result {
@@ -209,8 +207,8 @@ a {
 
 .choice:hover {
   background-color: #1b5299;
-  border: lightsalmon 7px solid;
-  color: lightsalmon;
+  border: #ffa07a 7px solid;
+  color: #ffa07a;
   cursor: pointer;
 }
 
@@ -239,6 +237,7 @@ a {
 #modal ul {
   padding-top: 45px;
 }
+
 #modal li {
   list-style: none;
   padding-top: 10px;
