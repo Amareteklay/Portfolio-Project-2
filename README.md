@@ -78,7 +78,7 @@ The logic involved while implementing the aforementioned features to answer the 
 
 ## Credit
 - Code for grid was adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
-
+- Code for closing modal on click in the window was taken from [w3schools](// Code from https://www.w3schools.com/howto/howto_css_modals.asp)
 - Code for the background gradient for game screen was taken from [Stackoverflow](https://stackoverflow.com/questions/19119946/css-background-image-plus-gradient-in-4-corners)
 
 ### Media

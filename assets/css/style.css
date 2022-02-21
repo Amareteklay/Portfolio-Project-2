@@ -17,16 +17,15 @@ body {
   margin: 0 auto;
   width: 65%;
   height: 86vh;
-  background-color: #218380;
+  background-color: #1b5299;
   border: #80ced7 1px solid;
   border-radius: 15px;
   text-align: center;
-  box-shadow: inset 0px 0px 200px 10px #000;
   border-radius: 15px;
   position: relative;
   top: 27px;
   overflow: hidden;
- }
+}
 
 #welcome,
 #play,
@@ -38,7 +37,7 @@ body {
   width: 100%;
 }
 
-#play, 
+#play,
 #result,
 #rules {
   display: none;
@@ -83,9 +82,9 @@ a {
 }
 
 .logo {
-  font-size: 14px;
-  color: #ffa07a;
+  color: #eee;
 }
+
 #welcome h1 {
   padding: 20px;
   color: #eee;
@@ -112,6 +111,7 @@ a {
   outline: 0;
   padding-left: 10px;
 }
+
 .next-btn {
   padding: 10px 30px;
   border: #80ced7 2px solid;
@@ -142,10 +142,10 @@ a {
 }
 
 #prompt-message {
-grid-column: 1 / span 5;
-height: 75px;
-padding-top: 20px;
-font-size: 28px;
+  grid-column: 1 / span 5;
+  height: 75px;
+  padding-top: 20px;
+  font-size: 28px;
 }
 
 #choice-container {
@@ -153,10 +153,11 @@ font-size: 28px;
   width: 80%;
   max-width: 846px;
 }
- #choice-container .choice {
+
+#choice-container .choice {
   display: inline-block;
   margin: 30px;
- }
+}
 
 .lizard-rock {
   display: inline-block;
@@ -201,6 +202,7 @@ font-size: 28px;
   color: #1b5299;
   border: #1b5299 5px solid;
 }
+
 .game-cell {
   border-radius: 75px;
   padding: 5px;
@@ -261,7 +263,7 @@ font-size: 28px;
   left: 17.5%;
   top: 28px;
   position: fixed;
-  background-color: #80ced7;
+  background-color: #1b5299;
   border-radius: 15px;
   color: #eee;
   z-index: 5;
@@ -278,7 +280,7 @@ font-size: 28px;
 }
 
 #close-icon {
-  color: #1b5299;
+  color: #eee;
   font-size: 24px;
   margin: 5px;
   float: right;
@@ -292,8 +294,8 @@ font-size: 28px;
 footer {
   height: 45px;
   width: 100%;
-  background-color: #eee;
-  color: #218380;
+  background-color: #000;
+  color: #eee;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -302,20 +304,20 @@ footer {
 
 #footer-about,
 #footer-follow {
-display: inline-block;
-padding-left: 27%;
+  display: inline-block;
+  padding-left: 27%;
 }
 
 footer p a {
-color: #218380;
-text-decoration: none;
-margin-left: 20px;
+  text-decoration: none;
+  margin-left: 20px;
 }
+
 /* Rules page */
 
 #rules h2 {
-padding: 20px;
-color: #eee;
+  padding: 20px;
+  color: #eee;
 }
 
 #rules li {
@@ -326,6 +328,7 @@ color: #eee;
 #now-play {
   width: fit-content;
 }
+
 #rules h2.welcome-btn {
   padding: 10px 30px;
   border: lightsalmon 2px solid;
@@ -356,9 +359,9 @@ color: #eee;
   border: #80ced7 3px solid;
   border-radius: 5px;
 }
-@media (max-width: 1024px){
-  #container
-  {
+
+@media (max-width: 1024px) {
+  #container {
     width: 75%;
   }
 }
@@ -367,9 +370,11 @@ color: #eee;
   #container {
     width: 100%;
   }
+
   .feedback-cell {
     font-size: 1.25rem;
   }
+
   .next-btn {
     padding: 5px 10px;
     border-radius: 10px;
@@ -383,7 +388,7 @@ color: #eee;
     top: 10px;
     border-radius: 50px;
   }
-  
+
   .choice-result {
     height: 100px;
     width: 100px;
@@ -392,11 +397,9 @@ color: #eee;
     font-size: 60px;
     padding: 15px 10px 10px 10px;
   }
-  
+
   .choice i {
     font-size: 60px;
     padding: 15px 10px 10px 10px;
   }
-  
-  
 }
