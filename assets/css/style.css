@@ -18,7 +18,7 @@ body {
   width: 65%;
   height: 86vh;
   background-color: #1b5299;
-  border: #80ced7 1px solid;
+ border-top: #80ced7 1px solid;
   border-radius: 15px;
   text-align: center;
   border-radius: 15px;
@@ -51,10 +51,19 @@ body {
   margin-top: 45px;
 }
 
-.top-icon {
+.logo {
+  float: left;
   text-align: left;
   color: #eee;
+  font-size: 18px;
+  border-left: #80ced7 7px solid;
+  border-bottom: #80ced7 2px solid;
+  border-right: #80ced7 1px solid;
+}
+
+.fa-home {
   font-size: 24px;
+  color: #80ced7;
 }
 
 a {
@@ -62,18 +71,11 @@ a {
   color: inherit;
 }
 
-.top-icon a {
-  color: #eee;
-}
-
-.home-icon {
-  margin-left: 0;
-}
-
 .question-icon {
   margin-right: 0;
   float: right;
   color: #eee;
+  font-size: 24px;
 }
 
 .question-icon:hover {
@@ -81,7 +83,8 @@ a {
   color: #ffa07a;
 }
 
-.logo {
+nav {
+  position: relative;
   color: #eee;
 }
 
@@ -200,7 +203,7 @@ a {
 
 .draw {
   color: #1b5299;
-  border: #1b5299 5px solid;
+  border: #80ced7 5px solid;
 }
 
 .game-cell {
