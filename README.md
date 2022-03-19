@@ -9,6 +9,14 @@ In this application, a player is able to play with the computer. Computer here r
 
 ![Responsive display on different screen sizes](/assets/images/responsive-mockup.jpg)
 
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
 It is live on github pages. [Play online here.](https://amareteklay.github.io/Portfolio-Project-2/index.html) 
 
 ## Table of Contents
