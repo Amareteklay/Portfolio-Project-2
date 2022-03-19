@@ -83,6 +83,7 @@ The logic involved while implementing the aforementioned features to answer the 
 ### Additional
 - Bootstrap
 - Figma
+- [Am I Responsive](http://ami.responsivedesign.is/#)
 
 ## Credit
 - Code for grid was adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
@@ -99,4 +100,4 @@ The logic involved while implementing the aforementioned features to answer the 
 - The content on the story page was copied from [The big bang theory](https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/#:~:text=Rock%20Paper%20Scissors%20Lizard%20Spock%20is%20an%20extension%20of%20the,would%20end%20in%20a%20tie.)
 
 ### Acknowledgments
-I am grateful to my mentor for his important comments on the color contrast in the game screen as well as his suggestion that I use tooltips to display names of the game items.
+- I am grateful to my mentor for his important comments on the color contrast in the game screen as well as his suggestion that I use tooltips to display names of the game items.
