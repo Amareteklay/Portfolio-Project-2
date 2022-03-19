@@ -200,7 +200,7 @@ nav {
 
 .draw {
   color: #1b5299;
-  border: #80ced7 5px solid;
+  border: #ffa07a 5px solid;
 }
 
 .game-cell {
@@ -209,15 +209,32 @@ nav {
 }
 
 .choice {
-  background-color: white;
+  background-color: #fff;
   position: relative;
   margin: 0 auto;
   height: 150px;
   width: 150px;
   top: 10px;
-  border: #80ced7 5px solid;
+  border: #1b5299 5px solid;
   border-radius: 75px;
   color: #1b5299;
+}
+
+/* Tooltip */
+/* Code adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip */
+.tooltip-text {
+  visibility: hidden;
+  background-color: #ffa07a;    
+  color: #1b5299;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.choice:hover .tooltip-text {
+  visibility: visible;
 }
 
 .choice-made {
@@ -352,11 +369,13 @@ footer p a {
 
 #story p a {
   color: #eee;
+  padding: 10px;
   text-decoration: none;
   font-size: 20px;
   text-align: center;
   border: #80ced7 3px solid;
   border-radius: 5px;
+  margin-left: 40%;
 }
 
 @media (max-width: 1024px) {
