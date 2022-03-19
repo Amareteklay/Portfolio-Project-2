@@ -27,7 +27,7 @@ function resetChoiceColor() {
         userChoice.classList.remove('winner');
     } else if (userChoice.classList.contains('draw')) {
         userChoice.classList.remove('draw');
-    };
+    }
     let comChoice = document.getElementById('computer-choice');
     if (comChoice.classList.contains('winner')) {
         comChoice.classList.remove('winner');
@@ -36,9 +36,9 @@ function resetChoiceColor() {
     } else if (comChoice.classList.contains('draw')) {
         comChoice.classList.remove('draw');
     }
-};
+}
 
-
+// part of intialization
 let rules = document.getElementById('rules-btn');
 rules.addEventListener('click', showRules);
 
@@ -62,7 +62,7 @@ function updateName() {
 
 let items = document.getElementsByClassName('choice');
 for (let i = 0; i < items.length; i++) {
-    items[i].addEventListener('click', playGame)
+    items[i].addEventListener('click', playGame);
 }
 
 function showResult() {
@@ -125,7 +125,7 @@ function determineWinner(item, comItem) {
     } else {
         winner.innerHTML = computer.charAt(0).toUpperCase() + computer.slice(1);
         loser.innerHTML = user.charAt(0).toUpperCase() + user.slice(1);
-        status.innerHTML = 'Beats'
+        status.innerHTML = 'Beats';
         document.getElementById('user-choice').classList.add('loser');
         document.getElementById('computer-choice').classList.add('winner');
         document.getElementById('win-lose').innerHTML = 'You lose!';
@@ -139,17 +139,17 @@ let questionIcon = document.getElementsByClassName('question-icon');
 for (let i = 0; i < questionIcon.length; i++) {
     questionIcon[i].addEventListener('click', function () {
         modal.style.display = "block";
-    })
+    });
 }
 
 let close = document.getElementById('close-icon');
 close.addEventListener('click', function () {
     modal.style.display = 'none';
-})
+});
 
 // Code from https://www.w3schools.com/howto/howto_css_modals.asp
 window.addEventListener('click', function (event) {
     if (event.target === modal) {
         modal.style.display = "none";
     }
-})
+});

@@ -56,14 +56,11 @@ body {
   text-align: left;
   color: #eee;
   font-size: 18px;
-  border-left: #80ced7 7px solid;
-  border-bottom: #80ced7 2px solid;
-  border-right: #80ced7 1px solid;
 }
 
 .fa-home {
   font-size: 24px;
-  color: #80ced7;
+  color: #eee;
 }
 
 a {
@@ -308,7 +305,7 @@ footer {
 #footer-about,
 #footer-follow {
   display: inline-block;
-  padding-left: 27%;
+  padding-left: 20%;
 }
 
 footer p a {
