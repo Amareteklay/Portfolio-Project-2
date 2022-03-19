@@ -237,7 +237,7 @@ nav {
 
 #choice-made .choice-made {
   display: inline-block;
-  margin: 10px 75px;
+  margin: 10px 45px;
 }
 
 .choice:hover {
@@ -314,7 +314,6 @@ footer p a {
 }
 
 /* Rules page */
-
 #rules h2 {
   padding: 20px;
   color: #eee;
@@ -364,9 +363,13 @@ footer p a {
   #container {
     width: 75%;
   }
+
+  #choice-made {
+    margin-left: 0;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 840px) {
   #container {
     width: 100%;
   }
@@ -399,7 +402,15 @@ footer p a {
   }
 
   .choice i {
-    font-size: 60px;
+    font-size: 45px;
     padding: 15px 10px 10px 10px;
   }
+
+  #comscore, #uscore {
+    padding: 0 5px;
+  }
+  #computer-choice {
+    padding-left: 0;
+  }
+
 }
