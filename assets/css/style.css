@@ -7,7 +7,6 @@
 
 body {
   font-family: "Exo", sans-serif;
-  background-color: rgba(28, 39, 39, 0.2);
   background: url(../images/bbt.jpg) center center no-repeat;
   background-size: cover;
   opacity: 0.9;
@@ -18,7 +17,7 @@ body {
   width: 65%;
   height: 86vh;
   background-color: #1b5299;
- border-top: #80ced7 1px solid;
+  border-top: #80ced7 1px solid;
   border-radius: 15px;
   text-align: center;
   position: relative;
@@ -83,6 +82,10 @@ nav {
   position: relative;
   color: #eee;
 }
+.game-screen {
+margin-top: 30px;
+position: relative;
+} 
 
 #welcome h1 {
   padding: 20px;
@@ -214,7 +217,7 @@ nav {
   height: 150px;
   width: 150px;
   top: 10px;
-  border: #1b5299 5px solid;
+  border: #1b5299 7px solid;
   border-radius: 75px;
   color: #1b5299;
 }
@@ -258,9 +261,10 @@ nav {
 
 .choice:hover {
   background-color: #1b5299;
-  border: #ffa07a 5px solid;
+  border: #ffa07a 7px solid;
   color: #ffa07a;
   cursor: pointer;
+  transition: border 1s;
 }
 
 .choice i {
@@ -369,13 +373,19 @@ footer p a {
 
 #story p a {
   color: #eee;
-  padding: 10px;
+  padding: 5px;
   text-decoration: none;
   font-size: 20px;
   text-align: center;
-  border: #80ced7 3px solid;
-  border-radius: 5px;
+  border: #80ced7 2px solid;
+  border-radius: 7px;
   margin-left: 40%;
+}
+
+#story p a:hover {
+  border: lightsalmon 2px solid;
+  color: lightsalmon;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {

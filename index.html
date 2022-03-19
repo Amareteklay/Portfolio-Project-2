@@ -20,15 +20,16 @@
     <div id="container">
 
         <!-- welcome and input name -->
+        <nav>
+            <div class="logo"><a href="index.html" aria-label="Go to home page">
+                    <i class="fas fa-home"></i></a>
+            </div>
+            <div class="question-icon">
+                <i class="far fa-question-circle"></i></span>
+            </div>
+        </nav>
         <div id="welcome">
-            <nav>
-                <div class="logo"><a href="index.html" aria-label="Go to home page">
-                        <i class="fas fa-home"></i></a>
-                </div>
-                <div class="question-icon">
-                    <i class="far fa-question-circle"></i></span>
-                </div>
-            </nav>
+            <div class="game-screen">
             <h1>Welcome!</h1> <br>
             <label for="user-name">Please Enter Your Name:</label> <br>
             <input id="user-name" type="text" name="player-name" maxlength="20" required />
@@ -37,18 +38,13 @@
                 <p>Or</p>
                 <button id="rules-btn" type="submit" aria-label="show rules" class="next-btn">See Rules</button>
             </div>
+            </div>
         </div>
 
         <!-- Start the game -->
         <div id="play">
-            <nav>
-                <div class="logo"><a href="index.html" aria-label="Go to home page">
-                        <i class="fas fa-home"></i> </a>
-                </div>
-                <div class="question-icon">
-                    <i class="far fa-question-circle"></i></span>
-                </div>
-            </nav>
+            
+            <div class="game-screen">
             <div id="prompt-message" class="feedback-cell">Please choose one</div>
             <div id="choice-container">
                 <div id="spock" class="choice"><span class="tooltip-text">Spock</span><i class="fas fa-hand-spock"></i>
@@ -62,18 +58,12 @@
                 <div id="rock" class="choice"><span class="tooltip-text">Rock</span><i class="fas fa-hand-rock"></i>
                 </div>
             </div>
+            </div>
         </div>
 
         <!-- Display results -->
         <div id="result">
-            <nav>
-                <div class="logo"><a href="index.html" aria-label="Go to home page">
-                        <i class="fas fa-home"></i> </a>
-                </div>
-                <div class="question-icon">
-                    <i class="far fa-question-circle"></i></span>
-                </div>
-            </nav>
+            <div class="game-screen">
             <div id="score-area">
                 <div id="uscore" class="feedback-cell">
                     <span id="player-name"></span>:
@@ -94,15 +84,12 @@
             </div>
             <div id="play-again"><span class="next-btn" aria-label="play again">Play Again</span></div>
             <div id="restart-game"><a class="next-btn" href="index.html" aria-label="Go to home page to restart game">Restart Game</a></div>
+            </div>
         </div>
 
         <!-- Show rules -->
         <div id="rules">
-            <nav>
-                <div class="logo"><a href="index.html" aria-label="Go to home page">
-                        <i class="fas fa-home"></i> </a>
-                </div>
-            </nav>
+            <div class="game-screen">
             <h2>Hello <span id="user"></span>! Here is how it works:</h2>
             <ul>
                 <li>
@@ -138,6 +125,7 @@
             </ul>
             <h2>Good luck!</h2>
             <button id="now-play" class="next-btn" aria-label="play game">Let's Play Now</button>
+            </div>
         </div>
         <!-- Modal -->
         <div id="modal">
