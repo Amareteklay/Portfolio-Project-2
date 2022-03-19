@@ -9,10 +9,10 @@
     <meta name="keywords" content="Game, Computer Game, Rock Paper Scissors, Bigbang theory, Spock">
 
     <link rel="canonical" href="https://amareteklay.github.io/Portfolio-Project-2/">
-     <meta name="author" content="Amare Teklay Hailu">
+    <meta name="author" content="Amare Teklay Hailu">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>JS Project</title>
+    <title>Rock Paper Scissors Lizard Spock Game</title>
 </head>
 
 <body>
@@ -22,18 +22,20 @@
         <!-- welcome and input name -->
         <div id="welcome">
             <nav>
-            <div class="logo"><a href="index.html" aria-label="Go to home page">
-                <i class="fas fa-home"></i></a> </div>
-                <div class="question-icon"><i
-                        class="far fa-question-circle"></i></span></div>
-                </nav>
+                <div class="logo"><a href="index.html" aria-label="Go to home page">
+                        <i class="fas fa-home"></i></a>
+                </div>
+                <div class="question-icon">
+                    <i class="far fa-question-circle"></i></span>
+                </div>
+            </nav>
             <h1>Welcome!</h1> <br>
             <label for="user-name">Please Enter Your Name:</label> <br>
-            <input id="user-name" type="text" name="player-name" required />
+            <input id="user-name" type="text" name="player-name" maxlength="20" required />
             <div id="game-btn">
-                <button id="play-btn" type="submit" class="next-btn">Let's play</button>
+                <button id="play-btn" type="submit" aria-label="play game" class="next-btn">Let's play</button>
                 <p>Or</p>
-                <button id="rules-btn" type="submit" class="next-btn">See Rules</button>
+                <button id="rules-btn" type="submit" aria-label="show rules" class="next-btn">See Rules</button>
             </div>
         </div>
 
@@ -41,17 +43,24 @@
         <div id="play">
             <nav>
                 <div class="logo"><a href="index.html" aria-label="Go to home page">
-                   <i class="fas fa-home"></i> </a> </div>
-                    <div class="question-icon"><i
-                            class="far fa-question-circle"></i></span></div>
-                    </nav>
+                        <i class="fas fa-home"></i> </a>
+                </div>
+                <div class="question-icon">
+                    <i class="far fa-question-circle"></i></span>
+                </div>
+            </nav>
             <div id="prompt-message" class="feedback-cell">Please choose one</div>
             <div id="choice-container">
-                <div id="spock" class="choice"><span class="tooltip-text">Spock</span><i class="fas fa-hand-spock"></i></div>
-                <div id="scissors" class="choice"><span class="tooltip-text">Scissors</span><i class="fas fa-hand-scissors"></i></div>
-                <div id="paper" class="choice"><span class="tooltip-text">Paper</span><i class="fas fa-hand-paper"></i></div>
-                <div id="lizard" class="choice"><span class="tooltip-text">Lizard</span><i class="fas fa-hand-lizard"></i></div>
-                <div id="rock" class="choice"><span class="tooltip-text">Rock</span><i class="fas fa-hand-rock"></i></div>
+                <div id="spock" class="choice"><span class="tooltip-text">Spock</span><i class="fas fa-hand-spock"></i>
+                </div>
+                <div id="scissors" class="choice"><span class="tooltip-text">Scissors</span><i
+                        class="fas fa-hand-scissors"></i></div>
+                <div id="paper" class="choice"><span class="tooltip-text">Paper</span><i class="fas fa-hand-paper"></i>
+                </div>
+                <div id="lizard" class="choice"><span class="tooltip-text">Lizard</span><i
+                        class="fas fa-hand-lizard"></i></div>
+                <div id="rock" class="choice"><span class="tooltip-text">Rock</span><i class="fas fa-hand-rock"></i>
+                </div>
             </div>
         </div>
 
@@ -59,10 +68,12 @@
         <div id="result">
             <nav>
                 <div class="logo"><a href="index.html" aria-label="Go to home page">
-                   <i class="fas fa-home"></i> </a> </div>
-                    <div class="question-icon"><i
-                            class="far fa-question-circle"></i></span></div>
-                    </nav>
+                        <i class="fas fa-home"></i> </a>
+                </div>
+                <div class="question-icon">
+                    <i class="far fa-question-circle"></i></span>
+                </div>
+            </nav>
             <div id="score-area">
                 <div id="uscore" class="feedback-cell">
                     <span id="player-name"></span>:
@@ -81,17 +92,18 @@
             <div class="feedback-cell"> <span id="winner"></span>
                 <span id="status"></span> <span id="loser"></span>
             </div>
-            <div id="play-again"><span class="next-btn">Play Again</span></div>
-            <div id="restart-game"><a class="next-btn" href="index.html">Restart Game</a></div>
+            <div id="play-again"><span class="next-btn" aria-label="play again">Play Again</span></div>
+            <div id="restart-game"><a class="next-btn" href="index.html" aria-label="Go to home page to restart game">Restart Game</a></div>
         </div>
 
         <!-- Show rules -->
         <div id="rules">
             <nav>
                 <div class="logo"><a href="index.html" aria-label="Go to home page">
-                   <i class="fas fa-home"></i> </a> </div>
-                    </nav>
-            <h2>Hello <span id="user"></span>!</h2>
+                        <i class="fas fa-home"></i> </a>
+                </div>
+            </nav>
+            <h2>Hello <span id="user"></span>! Here is how it works:</h2>
             <ul>
                 <li>
                     Paper <strong>COVERS</strong> Rock.
@@ -125,7 +137,7 @@
                 </li>
             </ul>
             <h2>Good luck!</h2>
-            <button id="now-play" class="next-btn">Let's Play Now</button>
+            <button id="now-play" class="next-btn" aria-label="play game">Let's Play Now</button>
         </div>
         <!-- Modal -->
         <div id="modal">
@@ -170,7 +182,7 @@
     <footer>
         <div id="footer-about">
             <p><a href="story.html" aria-label="Go to story page">
-                Rock Paper Scissors Lizard Spock </a></p>
+                    Rock Paper Scissors Lizard Spock </a></p>
         </div>
         <div id="footer-follow">
             <p>Follow me on: <a href="https://github.com/Amareteklay/" target="_blank"

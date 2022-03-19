@@ -21,7 +21,6 @@ body {
  border-top: #80ced7 1px solid;
   border-radius: 15px;
   text-align: center;
-  border-radius: 15px;
   position: relative;
   top: 27px;
   overflow: hidden;
@@ -278,9 +277,10 @@ nav {
   width: 65%;
   height: 86vh;
   left: 17.5%;
-  top: 28px;
+  top: 27px;
   position: fixed;
   background-color: #1b5299;
+  border-top: #80ced7 1px solid;
   border-radius: 15px;
   color: #eee;
   z-index: 5;
