@@ -269,6 +269,11 @@ I had tried to make the code as clean, readable and easy to maintain as possible
 ## Debugging 
 - I found stray closing span tag in the html code when I did W3C check.
 - I had used 'Exo' font family without importing the corresponding link to google fonts. I fixed it by placing the link in the head element of the HTML files. 
+- The modal screen was not showing correctly in smaller screens. 
+
+[Bug in modal display](assets/images/screen_shots/modal_bug.jpg)
+
+I noticed this when I opened the application on a tablet in portrait screen mode. I debugged it by changing the width and left margin of the modal in the media queries for smaller screens. The reason for this bug was that I had used percentages for the width and left margin, so when I changed the width of the container to fit in smaller screens, the modal got distorted. 
 # 
 [Back to top](#table-of-contents)
 #
