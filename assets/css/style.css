@@ -1,3 +1,4 @@
+/* Global styles */
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ body {
   opacity: 0.9;
 }
 
+/* main container */
 #container {
   margin: 0 auto;
   width: 65%;
@@ -25,6 +27,7 @@ body {
   overflow: hidden;
 }
 
+/* containers of screens*/
 #welcome,
 #play,
 #rules,
@@ -35,6 +38,7 @@ body {
   width: 100%;
 }
 
+/* Default display styles */
 #play,
 #result,
 #rules {
@@ -182,6 +186,7 @@ position: relative;
   display: inline-block;
 }
 
+/* Feedback win/lose */
 .winner {
   color: darkgreen;
   border: darkgreen 5px solid;
@@ -200,6 +205,7 @@ position: relative;
   padding-left: 75px;
 }
 
+/* Feedback during a draw */
 .draw {
   color: #1b5299;
   border: #ffa07a 5px solid;
@@ -276,6 +282,7 @@ position: relative;
   padding-left: 5px;
 }
 
+/* Modal */
 #modal {
   display: none;
   width: 65%;
@@ -312,6 +319,8 @@ position: relative;
   color: #ffa07a;
 }
 
+
+/* Footer */
 footer {
   height: 45px;
   width: 100%;
@@ -359,6 +368,9 @@ footer p a {
   color: #eee;
 }
 
+
+/* Story page*/
+
 #story h1 {
   color: #eee;
   padding: 10px;
@@ -388,6 +400,9 @@ footer p a {
   cursor: pointer;
 }
 
+
+/* Media queries */
+
 @media (max-width: 1024px) {
   #container {
     width: 75%;
@@ -397,6 +412,8 @@ footer p a {
     margin-left: 0;
   }
 }
+
+/*Media queries for smaller screens */
 
 @media (max-width: 840px) {
   #container {

@@ -19,8 +19,8 @@ The game has been deployed (more on deployment procedure later) to github pages.
   - [Owner goals](#owner-goals)
 - [Design](#design)
   - [User stories](#user-stories)
-  - [User experience](#user-experience)
-    - [Wire frames](#wireframe)
+  - [User experience](#ux)
+    - [Wire frames](#wire-frames)
     - [Color schemes](#color-scheme)
   - [Logic](#logic)
   - [Rules](#rules)
@@ -92,11 +92,11 @@ The logic involved while implementing the aforementioned features to answer the 
 - HTML
 - CSS
 ### Additional
-- [Bootstrap](https://getbootstrap.com/) was used for grid layout.
 - [Figma](https://www.figma.com/) to create wire frames.
 - [Am I Responsive](http://ami.responsivedesign.is/#) to check for responsive design for different screen sizes.
 - Chrome developer tools was a handy tool to calibrate rules and values. 
 - Gitpod was used as IDE. 
+- Google fonts.
 
 # 
 [Back to top](#table-of-contents)
@@ -110,6 +110,7 @@ Users of this application can
 - play with the computer.
 - play the game on tablets or mobile phones as long as they are connected to the internet.
 - read the rules of the game at any stage of the game with just a click on the show rules button on the home page or a question icon which toggles a modal. This feature is particularly useful for first time players, as the audience can be anyone with or without previous experience. 
+
 ![Modal](/assets/images/screen_shots/modal.jpg)
 
 Users can also
@@ -187,12 +188,10 @@ Lighthouse check on desktop:
 
 - I validated the CSS code using jigsaw W3 checker, and no errors were found (see badge).
 - External links open in new tabs.
-- The web application is fully responsive. I used bootstrap framework and media queries to make the site responsive.
+- The web application is fully responsive. I used media queries to make the site responsive.
 - Semantic HTML such as nav are used where it is necessary.
 - The content, including the short story about the game, is only site specific and relevant.
 - There is clear navigation through the different stages of the game and between different pages or screens. Users see intuitive icons or prompt text to invite them to take the next action to find the resource they want. Buttons say what they do. 
-- 
-
 
 #### LO3: Deployment
 - The application is deployed to [Github pages](https://amareteklay.github.io/Portfolio-Project-2/index.html) and users can play the game online.
@@ -201,15 +200,21 @@ Lighthouse check on desktop:
 - There are no broken links
 - Github was used for version control and commits were made as regularly and as clearly as possible. 
 #### LO4: Documentation, code structure and organisation
-- 
-- 
-- 
-- 
-- 
+- I have documented the key feetures and functions of this application to make it easy to maintain and extend in the future. The code is separated based on the tool used to write it, and even within a code file, I have separated functions and used comments to make them readable.
+- The different sections of this README file show its purpose, value and organizing principles 
+- I have indicated via comments code that was adapted  from external sources and given credit that is due to the sources.
+- I have used fontawesome icons and indicated that in the HTML file. See the [credit section](#credit) for a full list of resources from external sources.
+- I have organized the HTML, JavaScript and CSS code based on what is part does and how they fit together. In the JavaScript code, for example, I have code that initializes variables and then functions which make use of these variables to produce the intended effect. I used comments in the CSS sparingly because the IDs and classes are in most cases adequate to describe the corresponding HTML tag. 
+- I have placed CSS code from the assets directory in the head element of my HTML files so that the styles take effect as the pages load. 
+- I have placed JavaScript code just before the closing body tag of my HTML files so that the elements of the page will be available for the JavaScript functions to operate on.
+- I have followed conventions and best practices to use blank lines between code blocks and indentations between and/or within blocks of code to make it readable
+- Besides being organized in appropriate hierarchies and structure, files have consistent names with all file names in lower case characters and no space. The files are also descriptive enough to show their content as well as purpose. Example, wireframes subdirectory consists of images of wireframes.
+- I have followed the given guideline to group files in directories by file types.
+- I have presented the goals as well as potential users of this application in this particular file.
 
 #### LO5: Markdown formatting and structure 
 - I used markdown to organize the information in this document which is structured based on relevance in regards to the purpose of the project (meet user stories on the one hand and follow the learning outcomes as guidelines.)
-
+- I have presented the deployment procedure in [this section](#deployment-procedure).
 #### LO6: Interactivity
 - JavaScript functions have the necessary flow controls and conditions to check before doing something. For example, determining the winner (if any) after each round of the game is done by checking who played what. 
 - Most of the user inputs come in the form of actions (clicks). On the home page where users can input their names directly, empty input data is allowed and given a default value of 'Player.' The length of the input is, however, limited to a maximum of 10 characters.
@@ -220,7 +225,6 @@ Lighthouse check on desktop:
 - User actions will not generate internal errors. Events are handled properly.
 - To separate code and static files, the assets folder consists of images (which are categorized as wireframe images, tests and screen shots from the application), css and js directoies.
 - The application invites users to start action by entering their name or clicking on buttons that show the rules or the game area. Once in the game area, the user is prompted to choose one option. When they hover on a hand, they see the name. The transition of the change in border on hover event is set to one second to make it smooth. The feedback after each user action is optimized for being informative with minimum content to save the user's time.
-
 
 #### Other considerations
 - Information hierarchy:
@@ -242,8 +246,8 @@ Lighthouse check on desktop:
 ### Testing functionality
 
 ### Debugging 
-- I found stray closing span tag in the html code when I did W3C check. 
-
+- I found stray closing span tag in the html code when I did W3C check.
+- I used 'Exo' font family without importing the corresponding link to google fonts. I fixed it by placing the link in the head element of the HTML files. 
 # 
 [Back to top](#table-of-contents)
 #
