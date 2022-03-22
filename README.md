@@ -227,23 +227,14 @@ Lighthouse check on desktop:
 - The application invites users to start action by entering their name or clicking on buttons that show the rules or the game area. Once in the game area, the user is prompted to choose one option. When they hover on a hand, they see the name. The transition of the change in border on hover event is set to one second to make it smooth. The feedback after each user action is optimized for being informative with minimum content to save the user's time.
 
 #### Other considerations
-- Information hierarchy:
- - User control
- - Consistency
- - Confirmation
- - Accessibility
+- Design:
+As presented earlier, the design of this application is inline with the principles of UX design. I have used semantic markup wherever applicable to organize the informtion and resources. Users are given clear prompts for action and the events they initiate are handled properly. To give the site effective user control, there is consistency in how events are handled (e.g., feedback for winning is shown in green hand gesture no matter if the player or the computer wins.) This feedback coupled with the changes in the scores gives confirmation of the fact that the user's action has led to an outcome. As confirmed in the lighthouse check, the accessibility principle of the UX design has been adhered to.  
+
 - Development and implementation
- - clean code
- - file structure
- - readability
- - defensive design
- - comments
- - compliant code
- - robust code
+I had tried to make the code as clean, readable and easy to maintain as possible. The names and structure of files follow conventions and guidelines. To minimize errors from user inputs, most of the interactions between the application and the user are via clicks on predefined and intuitively clear choices (hands). The entire design and implementation considered the high likelihood that users of this application can be mostly children. Adding tooltips to the game area makes it easy for first time users to know the names of the choices while avoiding congestion of the game area. The same is true for the modal. 
+
 - Real world application
- - version control
- - documentation
-### Testing functionality
+ As the whole process of creating this application began with user stories, the implementation was also guided by the same stories. As such, it is well inline with the needs and expectations of users. It goes without saying by now that I used github for version control, and this documentation hopefully speaks for itself.
 
 ### Debugging 
 - I found stray closing span tag in the html code when I did W3C check.
@@ -253,17 +244,22 @@ Lighthouse check on desktop:
 #
 ## Deployment procedure
 The game is deployed live to Github pages. Here is a brief outline of the deployment process.
-- Create github account
-- Create repository
-- Create project and push project files and resources
-- Go to the settings tab from the repository
-- Click on the pages tab on the left menu 
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
 
+1. Create an account in Github and log in.
+2. Find the repository for the project, [Portfolio-Project-2](https://github.com/Amareteklay/Portfolio-Project-2/) in this case.
+3. Click on the [Settings](https://github.com/Amareteklay/Portfolio-Project-2/settings) link.
+4. Click on the [Pages](https://github.com/Amareteklay/Portfolio-Project-2/settings/pages) link from the navigation pane on the left hand side.
+5. In the Source section, choose main as a branch and root as a folder from the given drop down menus.
+6. Click Save. The web application is now deployed and live on [Github Pages](https://amareteklay.github.io/Portfolio-Project-2/).
+
+![Github pages](assets/images/screen_shots/github-pages.jpg)
 # 
 [Back to top](#table-of-contents)
 #
 ## Credit
 ### Code 
+- The layout of this documentation was adapted from the README template provided by [Code Institute](https://github.com/Code-Institute-Solutions/readme-template).
 - Code for grid was adapted from [this page in w3cschools](https://www.w3schools.com/css/tryit.asp?filename=trycss_grid).
 - Code for closing modal on click in the window was taken from [this page in w3schools](https://www.w3schools.com/howto/howto_css_modals.asp).
 - CSS code for tooltips was adapted from [tis page in w3cschools](https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip).
